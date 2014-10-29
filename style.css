@@ -1,0 +1,233 @@
+/* 
+Theme Name: Student Leadership at SCC
+
+Theme URI: http://scccstudentleadership.org/
+
+Description:  A WordPress theme for Student Leadership at SCC
+
+Des/Dev Team: 	Designers: Katie Anderson, Jeff Reynolds
+				Developers: Mike Cody, Reina Kawakita
+Tags: fixed width, 3 column, widgets 
+Version: 1.0
+This theme designed and developed as part of a project involving creating a website for a non-profit organization for the classes WEB210 Advanced Web Design and ITC210 Advanced Web Development.
+*/		
+
+/* RESETS */
+body, body * {
+	margin: 0; 
+	padding: 0; 
+}
+a img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/* GLOBAL TEXT STYLES */
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #444;
+	letter-spacing: .2px;
+}
+
+a:link, 
+a:visited {
+	color: #ff0000;
+	}
+		
+a:hover, 
+a:focus {
+	color: #00ff00;
+	}
+		
+/* LAYOUT */
+
+#wrapper {
+	clear: both;
+	width: 750px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+
+header #scc {
+	width: 100%;
+	height: 65px;
+	background: #008fc5;
+
+}
+
+header #slscc-head  {
+	width: 100%;
+	height: 45px;
+	background: #ddd;
+
+}
+
+header #slscc-head #header-center  {
+	width: 86%;
+	height: 45px;
+	background: #eee;
+
+}
+
+#slider-zone  {
+	width: 100%;
+	height: 246px;
+	background: #888;
+
+}
+
+#slider-panel  {
+	width: 32%;
+	height: 104px;
+
+}
+
+nav  #main {
+	width: 100%;
+	height: 40px;
+	background: #ddd;
+}
+
+nav #main #nav-center  {
+	width: 86%;
+	height: 45px;
+	background: #eee;
+
+}
+
+nav #main ul  {
+	width: 90%;
+	text-align: center;
+	display: block;
+	margin: auto;
+
+}
+
+nav #main ul li  {
+	width: 24.5%;
+	display: inline;
+	float: left;
+	color: white;
+}
+
+nav #main ul li a  {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#nav #main ul li a:hover {
+	color: #00ff00;
+	background-color: black;
+}
+
+#nav #main.current-menu-item a {
+	background:  #00ff00;
+}
+
+#middle  {
+	width: 100%;
+	clear: both;
+	padding: 2%;
+
+}
+
+#sidebar-primary  {
+	float: left;
+	width: 30%;
+
+}
+
+#main  {
+	float: right;
+	width: 65%;
+}
+
+
+
+#sidebar-secondary  {
+	float: right;
+	width: 40%;
+
+}
+
+#content  {
+	float: left;
+	width: 55%;
+	
+
+}
+
+footer #slscc-foot  {
+	width: 100%;
+	height: 45px;
+	background: #ddd;
+
+}
+
+footer #slscc-footer #footer-center {
+	width: 86%;
+	height: 45px;
+	background: #eee;
+
+}
+
+nav  #footer {
+	width: 100%;
+	height: 40px;
+	background: #ddd;
+}
+
+nav #footer #footer-center  {
+	width: 86%;
+	height: 45px;
+	background: #eee;
+
+}
+
+nav #footer ul  {
+	width: 90%;
+	text-align: center;
+	display: block;
+	margin: auto;
+
+}
+
+nav #footer ul li  {
+	width: 24.5%;
+	display: inline;
+	float: left;
+	color: white;
+}
+
+nav #footer ul li a  {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#nav #footer ul li a:hover {
+	color: #00ff00;
+	background-color: black;
+}
+
+#nav #footer.current-menu-item a {
+	background:  #00ff00;
+}
+
+footer #scc  {
+	width: 100%;
+	height: 172px;
+	background: #008fc5;
+
+}
