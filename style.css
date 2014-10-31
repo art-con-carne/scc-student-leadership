@@ -67,14 +67,12 @@ header #slscc-head  {
 	width: 100%;
 	height: 45px;
 	background: #ddd;
-
 }
 
 header #slscc-head #header-center  {
 	width: 86%;
 	height: 45px;
 	background: #eee;
-
 }
 
 #slider-zone  {
@@ -100,7 +98,7 @@ nav #main #nav-center  {
 	width: 86%;
 	height: 45px;
 	background: #eee;
-
+	margin: auto;
 }
 
 nav #main ul  {
@@ -137,69 +135,59 @@ nav #main ul li a  {
 #middle  {
 	width: 100%;
 	clear: both;
-	padding: 2%;
-
 }
 
 #sidebar-primary  {
 	float: left;
-	width: 30%;
-
+	width: 28%;
 }
 
 #main  {
 	float: right;
-	width: 65%;
-}
-
-
-
-#sidebar-secondary  {
-	float: right;
-	width: 40%;
-
+	width: 72%;
 }
 
 #content  {
 	float: left;
-	width: 55%;
-	
-
+	width: 58%;
 }
 
-footer #slscc-foot  {
+#sidebar-secondary  {
+	float: right;
+	width: 40%;
+}
+
+footer #slscc-footer {
 	width: 100%;
 	height: 45px;
 	background: #ddd;
-
+	clear:both;
 }
 
-footer #slscc-footer #footer-center {
+footer #slscc-footer #footer-center  {
 	width: 86%;
 	height: 45px;
 	background: #eee;
-
+	margin: auto;
 }
 
-nav  #footer {
+/*nav  #footer {
 	width: 100%;
-	height: 40px;
+	height: 45px;
 	background: #ddd;
 }
 
 nav #footer #footer-center  {
 	width: 86%;
-	height: 45px;
+	height: 40px;
 	background: #eee;
-
-}
+}*/
 
 nav #footer ul  {
 	width: 90%;
 	text-align: center;
 	display: block;
 	margin: auto;
-
 }
 
 nav #footer ul li  {
@@ -229,5 +217,5 @@ footer #scc  {
 	width: 100%;
 	height: 172px;
 	background: #008fc5;
-
+	clear: both;
 }

@@ -1,48 +1,26 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that
- * other 'pages' on your WordPress site will use a different template.
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<!-- START SIDEBAR -->
+<?php get_sidebar( 'primary' ); ?>
+<!-- END SIDEBAR -->
 
-<div id="main-content" class="main-content">
+<!-- START CONTENT -->
+<div id="main">
+    <div id="content">
+    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div id="post-<?php the_ID(); ?>">
+		        <h2><?php the_title(); ?></h2>     
+				<?php the_content('<p class="serif">More &raquo;</p>'); ?>
+		        <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
+		        
+				<?php wp_link_pages(); ?>
+			</div>
+   
+			<?php endwhile; endif; ?>
+    </div>
 
-<?php
-	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<!-- START SIDEBAR -->
+<?php get_sidebar( 'secondary' ); ?>
+<!-- END SIDEBAR -->
 
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
-
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
-			?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>
