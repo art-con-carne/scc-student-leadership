@@ -12,7 +12,8 @@ add_action('wp_enqueue_scripts', 'sccslResources');
 function register_my_menus() {
 	register_nav_menus(
 		array( 
-		  'main-menu' => __( 'Main Menu' )
+		  'main-menu' => __( 'Main Menu' ),
+		  'footer-menu' => __( 'Footer Menu' )
 		)	
 	);
 
@@ -24,7 +25,8 @@ function register_my_menus() {
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-menu' => 'Main Menu'
+		  'main-menu' => 'Main Menu',
+		  'footer_menu' => 'Footer Menu'
 		)
 	);
 }
