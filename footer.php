@@ -1,14 +1,35 @@
-		<footer class="site-footer">
 
-			<p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
 
-		</footer>
+<!--************************start footer**********************-->
+		
+		<div id="sidebar-secondary">
+			<?php get_sidebar( 'secondary' ); ?>	
+		</div><!--#sidebar-secondary-->
 
-	</div>
-	<!-- /site-wrapper -->
+	</div><!--#main-->
 
-<?php wp_footer(); ?>
+</div><!--#middle-->
+
+<div id="sl-footer">
+	
+		<div id="footer-center">
+				<?php wp_nav_menu( array( 
+					'theme_location' => 'footer-menu' ,
+					'menu' => 'Footer Menu' ,
+					'container'  => 'ul', 
+				) ); ?>			
+		</div><!--#footer-center-->
+
+</div><!--#sl-footer-->
+
+
+<div id="scc-footer">
+
+
+</div><!--#scc-footer-->
 
 </body>
-
 </html>
+
+
+
