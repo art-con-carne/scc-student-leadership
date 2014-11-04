@@ -16,4 +16,5 @@
 			<?php get_search_form(); ?>
 		</ul>
 	<?php endif; ?>
-</div>
+</div><!--/sidebar-secondary-->
+</div><!--/middle-->

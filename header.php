@@ -8,29 +8,29 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 		<![endif]-->    
 
-	  	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	  	<link rel="stylesheet/less" href="style.less" type="text/css">
+		<script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
+				
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 
-		<?php /*?> Always have wp_head() just before the closing </head>
-	   	tag of your theme. Many plugins use this hook to add 
-       	elements to <head> such as styles, scripts, and meta tags.
-	  	<?php */?>
-	  	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 	</head>
 	<body>
-		<div id="wrapper">
-			<header>
+		<header>
 				<div id="scc">
 					<h1>
 					<a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
 					</h1>
 					<p class="description"><?php bloginfo('description'); ?></p>
 				</div><!--#scc-->
-			</header>
-
+		</header>
+		
+		<div id="wrapper">
+			
 			<div id="slscc-head">
 				<div id="header-center">
 					<h1>

@@ -16,7 +16,7 @@
 
             dolor vel libero volutpat, vel interdum enim faucibus.
         </p>
-    </div>
+    </div><!--/content-->
 
 <!-- START SIDEBAR -->
 <?php get_sidebar( 'secondary' ); ?>

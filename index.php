@@ -14,10 +14,10 @@
                 <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
                 
                 <?php wp_link_pages(); ?>
-            </div>
+            </div><!--/post-->
    
             <?php endwhile; endif; ?>
-    </div>
+    </div><!--/content-->
 
 <!-- START SIDEBAR -->
 <?php get_sidebar( 'secondary' ); ?>
