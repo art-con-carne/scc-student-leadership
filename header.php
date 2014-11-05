@@ -21,12 +21,13 @@
 	</head>
 	<body>
 		<header>
-				<div id="scc">
-					<h1>
-					<a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
-					</h1>
-					<p class="description"><?php bloginfo('description'); ?></p>
-				</div><!--#scc-->
+				<div id="scc-header">
+					<h3>
+					<a href="<?php echo get_option('home'); ?>/">(Stylish logo) SEATTLE CENTRAL COLLEGE</a>
+					</h3>
+					<p class="description">One of the Seattle Colleges</p>
+				</div><!--#scc-header-->
+				
 		</header>
 		
 		<div id="wrapper">
@@ -49,7 +50,7 @@
 
 			<!-- START NAVIGATION -->
 			<nav>
-				<div id="main">
+				<div id="nav-main">
 					<div id="nav-center">
 						<?php wp_nav_menu( array( 
 							'theme_location' => 'main-menu' ,
@@ -57,7 +58,7 @@
 							'container'  => 'ul', 
 						) ); ?>	
 					</div><!--#nav-center-->		
-				</div><!--#main-->		
+				</div><!--#nav-main-->		
 			</nav>
 			<!-- END NAVIGATION -->
 <!--************************end header**********************-->

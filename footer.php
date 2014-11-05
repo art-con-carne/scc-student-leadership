@@ -15,9 +15,9 @@
 					</nav>
 				</div><!--#footer-center-->
 			</div><!--#sl-footer-->
-			<div id="scc">
+			<div id="scc-footer">
 			<!-- SCC footer goes here-->
-			</div><!--#scc-->
+			</div><!--#scc-footer-->
 		</footer>
 		
 	</body>
