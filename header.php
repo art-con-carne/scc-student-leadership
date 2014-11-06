@@ -28,10 +28,7 @@
 					<p class="description">One of the Seattle Colleges</p>
 				</div><!--#scc-header-->
 				
-		</header>
-		
-		<div id="wrapper">
-			
+				
 			<div id="slscc-head">
 				<div id="header-center">
 					<h1>
@@ -42,6 +39,8 @@
 				</div><!--#header-center-->	
 			</div><!--#slscc-head-->		
 
+		</header>
+			
 			<div id="slider-zone">
 				<div id="slider-panel">
 					<!--Slider goes here-->
