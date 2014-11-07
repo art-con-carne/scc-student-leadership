@@ -30,3 +30,32 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		)
 	);
 }
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+
+function my_register_sidebars() {
+
+	/* Register the 'primary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'sidebar-primary',
+			'name' => __( 'Primary Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h4 class="widget-title">',
+			'after_title' => '</h4>'
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id' => 'sidebar-secondary',
+			'name' => __( 'Secondary Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h4 class="widget-title">',
+			'after_title' => '</h4>'
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
+}
