@@ -38,7 +38,7 @@ function my_register_sidebars() {
 	/* Register the 'primary' sidebar. */
 	register_sidebar(
 		array(
-			'id' => 'sidebar-primary',
+			'id' => 'primary',
 			'name' => __( 'Primary Sidebar' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
@@ -47,9 +47,10 @@ function my_register_sidebars() {
 		)
 	);
 
+	/* Register the 'secondary' sidebar. */
 	register_sidebar(
 		array(
-			'id' => 'sidebar-secondary',
+			'id' => 'secondary',
 			'name' => __( 'Secondary Sidebar' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',

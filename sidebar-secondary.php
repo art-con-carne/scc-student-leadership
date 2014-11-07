@@ -5,16 +5,19 @@
 
 	<?php else : ?>
 	<p>
-		Student Leadership facilitates 
-		leadership development and supports 
-		student involvement, creating 
+		Student Leadership facilitates<br>
+		leadership development and supports<br>
+		student involvement, creating<br>
 		connections for student success.
 	</p>
-
+	
 	<h3><?php _e('Search'); ?></h3>
 		<ul>	
 			<?php get_search_form(); ?>
 		</ul>
+
+	<h4>Admin</h4>
+	
 	<?php endif; ?>
 </div><!--/sidebar-secondary-->
 </div><!--/middle-->

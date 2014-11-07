@@ -8,8 +8,8 @@
 			<?php else : ?>
 
 			<!-- Create some custom HTML or call the_widget().-->
-			<img src="http://ec2-54-68-141-55.us-west-2.compute.amazonaws.com/wp-content/themes/scc-student-leadership/images/Student-Leadership/SL2010.png" width="50%" height="50%" alt="SCCSL Logo" />
-
+			<!--<img src="http://ec2-54-68-141-55.us-west-2.compute.amazonaws.com/wp-content/themes/scc-student-leadership/images/Student-Leadership/SL2010.png" width="50%" height="50%" alt="SCCSL Logo" />-->
+			<img src="<?php bloginfo('template_directory');?>/images/Student-Leadership/SL2010.png" alt="SCCSL Logo" width="50%" height="50%"/>
 			<?php endif; ?>	
 		</div><!--/#sidebar-primary-->
 	</div><!--/#middle-->
