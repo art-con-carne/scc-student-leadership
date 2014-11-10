@@ -23,9 +23,9 @@
 		<header>
 				<div id="scc-header">
 					<h3>
-					<a href="<?php echo get_option('home'); ?>/">(Stylish logo) SEATTLE CENTRAL COLLEGE</a>
+					<a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory');?>/images/SCC/seattle-central-college-logo.svg" alt="SCC Logo"></a>
 					</h3>
-					<p class="description">One of the Seattle Colleges</p>
+					<!--<p class="description">One of the Seattle Colleges</p>-->
 				</div><!--#scc-header-->
 				
 				
