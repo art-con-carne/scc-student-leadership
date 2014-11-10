@@ -78,9 +78,13 @@ nav #nav-main {
   ul {
     width:90%;
     text-align:center;
-    display:block;
+    display:inline-table;
     margin:auto;
-    li {
+	position:relative;
+    ul {
+	display: none;
+	}
+	li {
       width:24.5%;
       display:inline;
       float:left;
@@ -90,7 +94,17 @@ nav #nav-main {
         text-decoration:none;
         color:#696969;
         font-weight:bold;
+		padding: 25px 40px;
       }
+	  hover {
+		background: #4b545f;
+		a{
+			color: #fff;
+		}	
+	  }
+	  hover > ul{
+		display:block;
+	  }
     }
   }
 }
