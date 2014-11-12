@@ -161,6 +161,11 @@ nav #footer ul li a {
   float: right;
   width: 40%;
 }
+#sidebar-secondary p {
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 10px 55px;
+}
 footer {
   background: #056B94;
 }
@@ -181,4 +186,7 @@ footer #scc-footer {
   height: 172px;
   margin: 0 auto;
   clear: both;
+  /*overflow: hidden;*/
+  border-top: 20px solid #3a3a3a;
+  color: #fff;
 }
