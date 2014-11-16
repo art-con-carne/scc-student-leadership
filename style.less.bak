@@ -1,7 +1,6 @@
 @color-scc:#056B94;
-@color-sl: #ffffff;
+@color-sl: #dddddd;
 @color-sl2: #eeeeee;
-@color-rule: #ea9322;
 
 body {
   margin:0;
@@ -17,7 +16,7 @@ body {
   }
 }
 h1 {
-	color:#000000;
+	color:#666666;
 }
 
 a {
@@ -28,10 +27,10 @@ a {
   }
 }
 a:link, a:visited {
-  color:#999999;
+  color:#ffffff;
 }
 a:hover, a:focus {
-  color:#ea9322;
+  color:#00ff00;
 }
 header {
   margin-top:0px;
@@ -55,14 +54,6 @@ header #slscc-head {
 	width:960px;
     height:45px;
     background: @color-sl2;
-	#sl-at-header {
-	
-	}
-	#slscc-rule{
-	width: 100%;
-	height: 5px;
-	background: #ea9322;
-	}
   }
 }
 #slider-zone {

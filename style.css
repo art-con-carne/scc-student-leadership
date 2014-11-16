@@ -12,7 +12,7 @@ body * {
   padding: 0;
 }
 h1 {
-  color: #666666;
+  color: #000000;
 }
 a {
   text-decoration: none;
@@ -23,11 +23,11 @@ a img {
 }
 a:link,
 a:visited {
-  color: #ffffff;
+  color: #999999;
 }
 a:hover,
 a:focus {
-  color: #00ff00;
+  color: #ea9322;
 }
 header {
   margin-top: 0px;
@@ -47,13 +47,18 @@ header #slscc-head {
   width: 100%;
   margin: 0 auto;
   height: 45px;
-  background: #dddddd;
+  background: #ffffff;
 }
 header #slscc-head #header-center {
   margin: 0 auto;
   width: 960px;
   height: 45px;
   background: #eeeeee;
+}
+header #slscc-head #header-center #slscc-rule {
+  width: 100%;
+  height: 5px;
+  background: #ea9322;
 }
 #slider-zone {
   width: 960px;
@@ -75,7 +80,7 @@ nav #nav-main {
   margin-bottom: 10px;
   width: 100%;
   height: 45px;
-  background: #dddddd;
+  background: #ffffff;
 }
 nav #nav-main #nav-center {
   width: 960px;
@@ -175,7 +180,7 @@ footer {
 footer #slscc-footer {
   width: 100%;
   height: 45px;
-  background: #dddddd;
+  background: #ffffff;
   clear: both;
 }
 footer #slscc-footer #footer-center {
