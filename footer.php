@@ -3,7 +3,7 @@
 		
 		<footer>
 			<div id="slscc-footer">
-			<div id="slscc-rule></div> <!--orange rule-->
+				<div class="slscc-rule"></div> <!--orange rule-->
 				<div id="footer-center">
 					<nav>
 						<div id="footer">
@@ -29,5 +29,4 @@
 			</div><!--#scc-footer-->
 		</footer>
 		
-	</body>
-</html>
+<?php include 'footer-scc.php'; ?>
