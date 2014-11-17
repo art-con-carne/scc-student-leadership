@@ -13,7 +13,8 @@ function register_my_menus() {
 	register_nav_menus(
 		array( 
 		  'main-menu' => __( 'Main Menu' ),
-		  'footer-menu' => __( 'Footer Menu' )
+		  'footer-menu' => __( 'Footer Menu' ),
+		  'clubs-menu' => __( 'Clubs Menu' )
 		)	
 	);
 
@@ -26,7 +27,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
 		  'main-menu' => 'Main Menu',
-		  'footer_menu' => 'Footer Menu'
+		  'footer_menu' => 'Footer Menu',
+		  'clubs-menu' => __( 'Clubs Menu' )
 		)
 	);
 }
