@@ -11,8 +11,6 @@
             <div id="post-<?php the_ID(); ?>">
                 <h2><?php the_title(); ?></h2>     
                 <?php the_content('<p class="serif">More &raquo;</p>'); ?>
-                <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
-                
                 <?php wp_link_pages(); ?>
             </div><!--/post-->
    
