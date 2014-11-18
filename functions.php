@@ -14,7 +14,9 @@ function register_my_menus() {
 		array( 
 		  'main-menu' => __( 'Main Menu' ),
 		  'footer-menu' => __( 'Footer Menu' ),
-		  'clubs-menu' => __( 'Clubs Menu' )
+		  'clubs-menu' => __( 'Clubs Menu' ),
+		  'committees-menu' => __( 'Committees Menu' ),
+		  'boards-menu' => __( 'Boards Menu' ),
 		)	
 	);
 
@@ -28,7 +30,9 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		array(
 		  'main-menu' => 'Main Menu',
 		  'footer_menu' => 'Footer Menu',
-		  'clubs-menu' => __( 'Clubs Menu' )
+		  'clubs-menu' => 'Clubs Menu',
+		  'committees-menu' => 'Committees Menu',
+		  'boards-menu' => 'Boards Menu'
 		)
 	);
 }
