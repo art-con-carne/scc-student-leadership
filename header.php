@@ -47,7 +47,7 @@
 			
 			<div id="slider-zone">
 				<div id="slider-panel">
-					<?php echo do_shortcode( "[ac-flexslider]" ); ?>
+					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
 
