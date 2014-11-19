@@ -47,7 +47,7 @@
 			
 			<div id="slider-zone">
 				<div id="slider-panel">
-					<!--Slider goes here-->
+					<?php echo do_shortcode( "[ac-flexslider]" ); ?>
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
 
