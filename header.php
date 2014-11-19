@@ -43,7 +43,7 @@
 				</div><!--#header-center-->	
 			</div><!--#slscc-head-->		
 
-		</header>
+	
 			
 			<div id="slider-zone">
 				<div id="slider-panel">
@@ -68,3 +68,4 @@
 			<!-- END NAVIGATION -->
 <!--************************end header**********************-->
 
+	</header>
