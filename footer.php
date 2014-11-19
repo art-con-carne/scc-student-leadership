@@ -30,3 +30,6 @@
 		</footer>
 		
 <?php include 'footer-scc.php'; ?>
+
+</body>
+</html>

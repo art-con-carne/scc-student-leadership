@@ -1,0 +1,367 @@
+footer {
+    display: block;
+}
+
+footer {
+    background: none repeat scroll 0 0 #008fc5;
+    border-top: 20px solid #3a3a3a;
+    color: #fff;
+    overflow: hidden;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer h4 {
+    color: #fff !important;
+}
+
+.row {
+    padding-left: 15px;
+}
+
+.row.collapse .column, .row.collapse .columns {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.large-12, .row .large-12 {
+    width: 100%;
+}
+
+.lt-ie9 .column.large-centered, .columns.large-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.columns {
+    float: left;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    position: relative;
+    width: 100%;
+}
+
+.lt-ie9 .column.large-centered, .columns.large-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.lt-ie9 .row.large-collapse .column, .lt-ie9 .row.large-collapse .columns {
+    padding: 0;
+}
+
+.lt-ie9 .column, .columns {
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.lt-ie9 .column.large-centered, .columns.large-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.ie7 .columns {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#newscenter-feed .columns, #newscenter-feed-mobile .columns {
+    border-right: 2px solid #000;
+    height: 85px;
+    padding: 6px !important;
+}
+
+.promo-area .columns {
+    padding: 0;
+}
+
+.social-media {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+}
+
+.icon-2x {
+    font-size: 2em;
+}
+
+.icon-2x.icon-border {
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+.icon-facebook:before {
+    content: "";
+}
+
+.icon-twitter:before {
+    content: "";
+}
+
+.icon-instagram:before {
+    content: "";
+}
+
+.icon-flickr:before {
+    content: "";
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.top-padding {
+    padding-top: 1em;
+}
+
+.smallprint {
+    font-size: 0.8em;
+    margin-bottom: 0.05em !important;
+}
+
+.rm-break, .rm-sm-break {
+    display: none;
+}
+
+#donate-contact-dis [class^="icon-"], #donate-contact-dis [class*=" icon-"] {
+    padding-right: 3px;
+}
+
+#donate-contact-dis ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0 0;
+    text-align: center;
+}
+#donate-contact-dis ul li {
+    display: inline;
+}
+#donate-contact-dis ul li a {
+    padding: 0.2em 1em;
+    text-decoration: none;
+}
+
+.icon-envelope-alt:before {
+    content: "";
+}
+
+.icon-money:before {
+    content: "";
+}
+
+.icon-warning-sign:before {
+    content: "";
+}
+
+#rave-alert-02 .rave-msg .icon-warning-sign {
+    display: inline;
+    float: left;
+    font-size: 2em;
+    margin-right: 0.25em;
+}
+
+.tinyprint {
+    font-size: 0.7em !important;
+}
+
+.college-links {
+    position: absolute;
+    top: -48px;
+}
+
+.footer-push {
+    height: 188px;
+    margin-top: 75px;
+}
+footer {
+    background: none repeat scroll 0 0 #008fc5;
+    border-top: 20px solid #3a3a3a;
+    color: #fff;
+    overflow: hidden;
+}
+footer a {
+    color: #fff;
+}
+footer h4 {
+    color: #fff !important;
+}
+.ie7 .footer-logo {
+    left: 75%;
+}
+.footer-logo {
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+
+@media only screen {
+
+	.column, .columns {
+		float: left;
+		padding-left: 0.9375em;
+		padding-right: 0.9375em;
+		position: relative;
+	}
+	
+	.column.small-centered, .columns.small-centered {
+		float: none !important;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.small-12 {
+		position: relative;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	footer {
+		height: 295px;
+	}
+	.social-media {
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+	}
+	.broadway-campus {
+		margin-top: 50px;
+	}
+	.college-links {
+		top: 20px;
+	}
+	.footer-logo {
+		position: absolute;
+		right: 10px;
+		top: -10px;
+	}
+	#donate-contact-dis ul li a {
+		padding: 0.2em 0.5em;
+		text-decoration: none;
+	}
+	
+	.broadway-campus {
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 935px) {
+	.metro-tile .icon-2x {
+		font-size: 1.75em;
+	}
+}
+
+@media only screen and (max-width: 885px) {
+	#newscenter-feed .columns {
+		font-size: 14px;
+		height: 80px;
+	}
+}
+
+@media only screen and (max-width: 784px) {
+	#newscenter-feed .columns {
+		font-size: 14px;
+		height: 80px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	footer {
+		height: 355px;
+	}
+	.footer-logo {
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		right: 0;
+		top: 55px;
+	}
+	.college-links {
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 10px;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+
+	.column.large-centered, .columns.large-centered {
+		float: none !important;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.column.large-uncentered, .columns.large-uncentered {
+    float: left !important;
+    margin-left: 0;
+    margin-right: 0;
+	}
+	.column.large-uncentered.opposite, .columns.large-uncentered.opposite {
+		float: right !important;
+	}
+	
+	.large-12 {
+		position: relative;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.rm-sm-break {
+		display: block;
+	}
+	
+	.hide-for-small, hide-for-tiny, .toggle-hide-for-tiny {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	#donate-contact-dis ul li a {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+	.small-front-top-tiles .columns:last-child {
+		float: left;
+	}
+
+	.lt-ie9 .column.large-centered, .columns.large-centered {
+		float: none;
+		margin: 0 auto;
+	}
+
+	footer {
+		height: 365px;
+	}
+	#donate-contact-dis ul li a {
+		padding: 0.2em;
+		text-decoration: none;
+	}
+	.college-links {
+		top: 5px;
+	}
+	.footer-logo {
+		top: 55px;
+	}
+}

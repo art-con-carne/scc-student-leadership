@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'header-scc.php'; ?>
+
 <html <?php language_attributes(); ?>>
 	<head>
 		<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
@@ -31,13 +33,13 @@
 				
 			<div id="slscc-head">
 				<div id="header-center">
-				<div id="slscc-rule></div> <!--orange rule-->
+
 					<h1>
 						<a href= "<?php echo get_option('home'); ?>" ><strong>Student Leadership</strong> at 
 							<span id="sl-at-header">Seattle Central College</span>
 						</a>
 					</h1>
-				<div id="slscc-rule></div> <!--orange rule-->
+				<div class="slscc-rule"></div> <!--orange rule-->
 				</div><!--#header-center-->	
 			</div><!--#slscc-head-->		
 
@@ -50,7 +52,7 @@
 			</div><!--#slider-zone-->
 
 			<!-- START NAVIGATION -->
-			<div id="slscc-rule></div> <!--orange rule-->
+			<div class="slscc-rule"></div> <!--orange rule-->
 			<nav>
 				<div id="nav-main">
 					<div id="nav-center">
@@ -62,7 +64,7 @@
 					</div><!--#nav-center-->		
 				</div><!--#nav-main-->		
 			</nav>
-			<div id="slscc-rule></div> <!--orange rule-->
+			<div class="slscc-rule"></div> <!--orange rule-->
 			<!-- END NAVIGATION -->
 <!--************************end header**********************-->
 
