@@ -14,7 +14,10 @@
 				<?php wp_link_pages(); ?>
 			</div>
    
-			<?php endwhile; endif; ?>
+			<?php endwhile; 
+			else:?>
+				Sorry, no posts to be found.
+			<?php endif; ?>
     </div>
 
 <!-- START SIDEBAR -->
