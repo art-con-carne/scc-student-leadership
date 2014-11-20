@@ -21,7 +21,7 @@
 
 		<?php wp_head(); ?>
 	</head>
-	<body>
+	
 		<header>
 				<div id="scc-header">
 					<h3>
@@ -69,3 +69,4 @@
 <!--************************end header**********************-->
 
 	</header>
+	<body>
