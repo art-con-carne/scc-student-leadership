@@ -60,14 +60,14 @@ header #slscc-head #header-center #slscc-rule {
   height: 5px;
   background: #ea9322;
 }
-#slider-zone {
+header #slider-zone {
   width: 960px;
   margin: 0 auto;
   height: 246px;
   background: #888888;
   position: relative;
 }
-#slider-panel {
+header #slider-panel {
   float: right;
   width: 32%;
   height: 104px;
