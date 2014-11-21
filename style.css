@@ -1,70 +1,71 @@
+/*
+Open Sans styles:
+Normal 400 - Nav, text
+Semi-Bold 600 Italic - Subheaders, Quotes
+Bold 700
+Bold 700 Italic - Headers, Quote Marks?
+*/
 body {
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 0px none;
+  line-height: 150%;
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #444444;
-  letter-spacing: .2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
 }
-body * {
-  margin: 0;
-  padding: 0;
+/*COLOR IS WRONG HERE*/
+header {
+  margin-top: 0px;
+  background: #ffffff;
+  width: 100%;
+}
+/*COLOR AND FONT ARE  ALL WRONG HERE AND NO BORDER*/
+#slscc-header {
+  width: 80%;
+  height: 45px;
+  border-bottom: 5px solid #ea9322;
+  font-weight: 700;
+  font-style: italic;
+  height: 2em;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+}
+/*THIS IS NOT REGISTERING AT ALL*/
+#slscc-header span {
+  font-weight: 400;
+  font-style: normal;
+  height: 9em;
+  color: red;
 }
 h1 {
+  font: 'Open Sans', sans-serif;
   color: #000000;
+  font-weight: 700;
+  font-style: italic;
+  height: 4em;
 }
 a {
   text-decoration: none;
   list-style-type: none;
 }
-a img {
-  border: none;
-}
 a:link,
-a:visited {
-  color: #999999;
-}
-a:hover,
-a:focus {
+a a:visited {
   color: #ea9322;
 }
-header {
-  margin-top: 0px;
-  background: #056b94;
-}
-header #scc-header {
-  width: 960px;
-  height: 65px;
-  margin: 0px auto;
-  padding: 8px 0;
-}
-header #scc-header p,
-header #scc-header a {
-  color: white;
-}
-header #slscc-head {
-  width: 100%;
-  margin: 0 auto;
-  height: 45px;
-  background: #ffffff;
-}
-header #slscc-head #header-center {
-  margin: 0 auto;
-  width: 960px;
-  height: 45px;
-  background: #eeeeee;
-}
-header #slscc-head #header-center #slscc-rule {
-  width: 100%;
-  height: 5px;
-  background: #ea9322;
+a a:hover,
+a a:focus {
+  color: #ea9322;
 }
 #slider-zone {
-  width: 960px;
+  border-top: 5px solid #ea9322;
+  border-bottom: 5px solid #ea9322;
+  width: 80%;
   margin: 0 auto;
   height: 246px;
-  background: #888888;
+  background: #red;
   position: relative;
 }
 #slider-panel {
@@ -76,67 +77,56 @@ header #slscc-head #header-center #slscc-rule {
   bottom: 0;
   right: 0;
 }
-nav #nav-main {
+nav #nav-main,
+#nav-footer {
+  border-top: 5px solid #ea9322;
   margin-bottom: 10px;
   width: 100%;
-  height: 45px;
+  height: 55px;
   background: #ffffff;
 }
-nav #nav-main #nav-center {
+nav #nav-main #nav-center,
+#nav-footer #nav-center {
   width: 960px;
   height: 45px;
-  background: #eeeeee;
+  background: #ffffff;
   margin: 0 auto;
 }
-nav #nav-main ul {
+nav #nav-main ul,
+#nav-footer ul {
   width: 90%;
   text-align: center;
   display: block;
   margin: auto;
 }
-nav #nav-main ul li {
+nav #nav-main li,
+#nav-footer li {
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  height: 1.5em;
   width: 24.5%;
   display: inline;
   float: left;
   color: #696969;
 }
-nav #nav-main ul li a {
+nav #nav-main a,
+#nav-footer a {
   display: block;
   text-decoration: none;
   color: #696969;
   font-weight: bold;
 }
-nav #footer ul {
-  width: 90%;
-  text-align: center;
-  display: block;
-  margin: auto;
+nav #nav-main a:hover,
+#nav-footer a:hover {
+  color: #ea9322;
 }
-nav #footer ul li {
-  width: 24.5%;
-  display: inline;
-  float: left;
-  color: #696969;
+nav #nav-main a .current-menu-item a,
+#nav-footer a .current-menu-item a {
+  color: #ea9322;
 }
-nav #footer ul li a {
-  display: block;
-  text-decoration: none;
-  color: #696969;
-  font-weight: bold;
-}
-#nav #main ul li a:hover {
-  color: #00ff00;
-  background-color: black;
-}
-#nav #main.current-menu-item a {
-  background: #00ff00;
-}
-#nav #footer ul li a:hover {
-  color: #00ff00;
-  background-color: black;
-}
-#nav #footer.current-menu-item a {
-  background: #00ff00;
+nav #nav-main {
+  border-bottom: 5px solid #ea9322;
 }
 #wrapper {
   clear: both;
@@ -175,26 +165,16 @@ nav #footer ul li a {
   padding: 10px 55px;
 }
 footer {
+  width: 100%;
   background: #056b94;
 }
-footer #slscc-footer {
-  width: 100%;
+#slscc-footer {
   height: 45px;
   background: #ffffff;
   clear: both;
 }
-footer #slscc-footer #footer-center {
-  width: 960px;
+#footer-center {
+  width: 80%;
   height: 45px;
-  background: #eeeeee;
   margin: auto;
-}
-footer #scc-footer {
-  width: 960px;
-  height: 172px;
-  margin: 0 auto;
-  clear: both;
-  /*overflow: hidden;*/
-  border-top: 20px solid #3a3a3a;
-  color: #fff;
 }

@@ -1,24 +1,22 @@
-footer {
-    display: block;
-}
 
-footer {
-    background: none repeat scroll 0 0 #008fc5;
+
+#footer-scc {
+    background: none repeat scroll 0 0 #056B94;
     border-top: 20px solid #3a3a3a;
     color: #fff;
     overflow: hidden;
 }
 
-footer a {
+#footer-scc a {
     color: #fff;
 }
 
-footer h4 {
+#footer-scc h4 {
     color: #fff !important;
 }
 
 .row {
-    padding-left: 15px;
+width: 80%;
 }
 
 .row.collapse .column, .row.collapse .columns {
