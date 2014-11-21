@@ -43,11 +43,12 @@
 				</div><!--#header-center-->	
 			</div><!--#slscc-head-->		
 
-		</header>
+	
 			
 			<div id="slider-zone">
+					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 				<div id="slider-panel">
-					<!--Slider goes here-->
+
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
 
@@ -68,3 +69,4 @@
 			<!-- END NAVIGATION -->
 <!--************************end header**********************-->
 
+	</header>
