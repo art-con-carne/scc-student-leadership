@@ -48,7 +48,11 @@
 			<div id="slider-zone">
 					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 				<div id="slider-panel">
+<<<<<<< HEAD
 
+=======
+					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+>>>>>>> 96e2265c64b131a6ae513fdbcaf202747a7c819f
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
 

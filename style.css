@@ -65,8 +65,8 @@ a a:focus {
   width: 80%;
   margin: 0 auto;
   height: 246px;
-  background: #red;
   position: relative;
+  background: #888888;
 }
 #slider-panel {
   float: right;
