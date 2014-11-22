@@ -1,29 +1,22 @@
-.row {
-    padding-left: 15px;
-	width: 80%;
-}
 
 #scc-header  {
-    background: none repeat scroll 0 0 #008fc5;
+    background: #0F90C7;
     width: 100%;
 	padding-top: -40px;
 }
 
-.full-width-branded {
-    background: none repeat scroll 0 0 #008fc5;
-    width: 100%;
+.row {
+    padding-left: 15px;
+	width: 80%;
+	margin: 0 auto;
 }
 
-.header-logo {
-    position: relative;
+#header-logo {
     width: 250px;
-}
-
-.header-logo-crop {
     display: block;
     height: auto;
     margin: 10px 0 0 15px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: auto;
 }
 
@@ -36,22 +29,15 @@
 @media screen and (max-width: 700px) {
 	.header-logo {
 		max-width: 150px;
-	}
-
-	.header-logo-crop {
 		height: 45px;
-		margin-bottom: 0;
+		margin-bottom: 0;		
 	}
 }
 
 @media screen and (max-width: 450px) {
-	.header-logo-crop {
+	.header-logo {
 		height: 30px;
 		margin-top: 12px;
-	}
-
-	.header-logo {
-		position: relative;
-		width: 250px;
+		width: 250px;		
 	}
 }

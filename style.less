@@ -1,11 +1,9 @@
-@color-scc-bg:#056B94;
-@color-scc:#0F90C7;
+@color-scc-bg: #0F90C7;
 @color-sl: #ffffff;
 @color-border: #ea9322;
 @std-border: 5px solid @color-border;
 @hover-color:  #ea9322;
 @font-color1: #000000;
-@test-border: 5px solid #ff0000;
 
 /*
 Open Sans styles:
@@ -30,13 +28,35 @@ body {
 	color: @font-color1;
 }
 
+#scc-header  {
+    background: @color-scc-bg;
+    width: 100%;
+	padding-top: -60px;
+}
+
+.row {
+    padding-left: 15px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#header-logo {
+    display: block;
+    height: auto;
+    margin: 10px 0 0 15px;
+    width: auto;
+}
+
 header {
 	margin-top: 0px;
-	background: @color-sl;
 	width: 100%;
 }
+
+
+
 	
 #sl-header {	
+	background: @color-sl;
 	width: 100%;
 		#header-center  {
 			width: 80%;
@@ -92,14 +112,14 @@ nav #nav-main, #nav-footer {
 	width: 80%;
 	font-weight: 400;
 	margin: auto;
-	margin-bottom: 20px;
+
 	height: 2.5em;
 		#nav-center, #footer-center {
 			font-family: 'Open Sans', sans-serif;
 			color: @font-color1;
 			font-style: normal;
-			font-size: 1.5em;
-			line-height: 1.5em;
+			font-size: 1.3em;
+			line-height: 1.75em;
 			margin: 0 auto;
 			}
 				ul {
@@ -130,7 +150,15 @@ nav #nav-main, #nav-footer {
 								
 nav #nav-main {
 	border-bottom: @std-border;
+	margin-bottom: 20px;
 }
+
+#nav-footer {
+	width: 100%;
+	border-top: @std-border;
+
+}
+
 
 #wrapper {
 	clear: both;
@@ -179,3 +207,39 @@ footer{
 
 }
 
+#footer-scc {
+    background: @color-scc-bg;
+    color: #fff;
+    overflow: hidden;
+}
+
+#footer-scc a {
+    color: #fff;
+}
+
+#footer-scc h4 {
+    color: #fff !important;
+}
+
+/***********MEDIA QUERIES**************/
+@media only screen and (max-width: 825px) {
+	.header-logo {
+		max-width: 220px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header-logo {
+		max-width: 150px;
+		height: 45px;
+		margin-bottom: 0;		
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.header-logo {
+		height: 30px;
+		margin-top: 12px;
+		width: 250px;		
+	}
+}

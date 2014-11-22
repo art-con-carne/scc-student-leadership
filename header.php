@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 
-
 <html <?php language_attributes(); ?>>
 	<head>
 		<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
@@ -10,8 +9,11 @@
 		<!--[if lt IE 9]> 
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 		<![endif]-->    
-	  	<link rel="stylesheet" href="footer-scc.css" type="text/css">
+
 	  	<link rel="stylesheet/less" href="style.less" type="text/css">
+		<link rel="stylesheet" href="header-scc.css" type="text/css">
+		<link rel="stylesheet" href="footer-scc.css" type="text/css">		
+				
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600italic,700italic,300' rel='stylesheet' type='text/css'>
 				
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -24,6 +26,18 @@
 	</head>
 	<body>
 		<header>
+		<!--start SCC-HEADER-->
+			<div id="scc-header">
+
+						<a href="http://www.seattlecentral.edu">
+							<div id="header-logo">
+								<img src="images/seattle-central-college-logo.png" alt="So where's the Logo already?">
+							</div><!--.header-logo-->
+						</a>
+
+			</div><!--#scc-header-->		
+		<!--end SCC-HEADER-->
+
 			<div id="sl-header">
 				<div id="header-center">
 

@@ -17,12 +17,28 @@ body {
   line-height: 150%;
   color: #000000;
 }
+#scc-header {
+  background: #0f90c7;
+  width: 100%;
+  padding-top: -60px;
+}
+.row {
+  padding-left: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+#header-logo {
+  display: block;
+  height: auto;
+  margin: 10px 0 0 15px;
+  width: auto;
+}
 header {
   margin-top: 0px;
-  background: #ffffff;
   width: 100%;
 }
 #sl-header {
+  background: #ffffff;
   width: 100%;
 }
 #sl-header #header-center {
@@ -76,7 +92,6 @@ nav #nav-main,
   width: 80%;
   font-weight: 400;
   margin: auto;
-  margin-bottom: 20px;
   height: 2.5em;
 }
 nav #nav-main #nav-center,
@@ -86,8 +101,8 @@ nav #nav-main #footer-center,
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   font-style: normal;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.75em;
   margin: 0 auto;
 }
 nav #nav-main ul,
@@ -124,6 +139,11 @@ nav #nav-main a:focus,
 }
 nav #nav-main {
   border-bottom: 5px solid #ea9322;
+  margin-bottom: 20px;
+}
+#nav-footer {
+  width: 100%;
+  border-top: 5px solid #ea9322;
 }
 #wrapper {
   clear: both;
@@ -163,4 +183,35 @@ nav #nav-main {
 }
 footer {
   width: 100%;
+}
+#footer-scc {
+  background: #0f90c7;
+  color: #fff;
+  overflow: hidden;
+}
+#footer-scc a {
+  color: #fff;
+}
+#footer-scc h4 {
+  color: #fff !important;
+}
+/***********MEDIA QUERIES**************/
+@media only screen and (max-width: 825px) {
+  .header-logo {
+    max-width: 220px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header-logo {
+    max-width: 150px;
+    height: 45px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-logo {
+    height: 30px;
+    margin-top: 12px;
+    width: 250px;
+  }
 }
