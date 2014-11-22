@@ -4,6 +4,7 @@
 @color-border: #ea9322;
 @std-border: 5px solid @color-border;
 @hover-color:  #ea9322;
+@font-color1: #000000:
 
 
 /*
@@ -23,6 +24,7 @@ body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
+	color: @font-color;
 }
 /*COLOR IS WRONG HERE*/
 header {
@@ -31,7 +33,7 @@ header {
 	width: 100%;
 	}
 /*COLOR AND FONT ARE  ALL WRONG HERE AND NO BORDER*/	
-#slscc-header {
+#sl-header {
 	width:80%; 
 	margin:0 auto;
 	height:45px;
@@ -44,12 +46,7 @@ header {
 	height:40px;
 	}
 /*THIS IS NOT REGISTERING AT ALL*/	
-#slscc-header span {
-	font-weight: 400;
-	font-style: normal;
-	height: 9em;
-	color: red;
-}
+
 
 
 h1 {
@@ -57,15 +54,21 @@ h1 {
 	color: #000000;
 	font-weight: 700;
 	font-style: italic;
-	height: 4em;
+	height: 2em;
+	}
+	h1 span {
+	font-weight: 400;
+	font-style: normal;
+	color: @font-color1;
+	height: 2em;
 	}
 	a {
 	  text-decoration:none;
 	  list-style-type:none;
-		&:link, a:visited {
+		&:link, &:visited {
 		  color:@color-border;
 		}
-		a:hover, a:focus {
+		&:hover, &:focus {
 		  color:@color-border;
 		}
 }

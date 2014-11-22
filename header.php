@@ -11,7 +11,7 @@
 		<![endif]-->    
 
 	  	<link rel="stylesheet/less" href="style.less" type="text/css">
-		<script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600italic,700italic' rel='stylesheet' type='text/css'>
 				
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -19,27 +19,26 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 
-		<?php wp_head(); ?>
+		<?php /*wp_head();*/ ?>
 	</head>
 	<body>
 		<header>
-					
-			<div id="slscc-head">
+			<div id="sl-header">
 				<div id="header-center">
 
 					<h1>
 						<a href= "<?php echo get_option('home'); ?>" ><strong>Student Leadership</strong> at 
-							<span id="sl-at-header">Seattle Central College</span>
+							<span>Seattle Central College</span>
 						</a>
 					</h1>
-				<div class="slscc-rule"></div> <!--orange rule-->
+
 				</div><!--#header-center-->	
-			</div><!--#slscc-head-->		
+			</div><!--#sl-header-->		
 
 	
 			
 			<div id="slider-zone">
-					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+				<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 				<div id="slider-panel">
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->

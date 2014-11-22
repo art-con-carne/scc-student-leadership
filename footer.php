@@ -1,8 +1,8 @@
 		</div><!--/main-->
 	</div><!--/wrapper -->
 		
-		<footer>
-			<div id="slscc-footer">
+		<div id="footer-scc">
+			<div id="nav-footer">
 				<div class="slscc-rule"></div> <!--orange rule-->
 				<div id="footer-center">
 					<nav>
