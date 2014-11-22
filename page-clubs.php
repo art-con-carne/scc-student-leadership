@@ -8,15 +8,13 @@
 <div id="main">
     <div id="content">
         <?php
-			$clublist = array('category' => 'clubs');
+			$clublist = array('category_name' => 'club-info');
 			$query = new WP_Query( $clublist );
 		?>
 	
 		<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
             <div id="post-<?php the_ID(); ?>">
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2>     
-                <?php the_content('<p class="serif">More &raquo;</p>'); ?>
-                <?php wp_link_pages(); ?>
             </div><!--/post-->
    
             <?php endwhile; 
