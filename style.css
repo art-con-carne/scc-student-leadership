@@ -1,6 +1,7 @@
 /*
 Open Sans styles:
-Normal 400 - Nav, text
+Light 300 - Nav
+Normal 400 - Text
 Semi-Bold 600 Italic - Subheaders, Quotes
 Bold 700
 Bold 700 Italic - Headers, Quote Marks?
@@ -9,54 +10,47 @@ body {
   background: #ffffff;
   box-sizing: border-box;
   border: 0px none;
-  line-height: 150%;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
+  line-height: 150%;
   color: #000000;
 }
-/*COLOR IS WRONG HERE*/
 header {
   margin-top: 0px;
   background: #ffffff;
   width: 100%;
 }
-/*COLOR AND FONT ARE  ALL WRONG HERE AND NO BORDER*/
-#slscc-header {
-  width: 80%;
-  height: 45px;
-  border-bottom: 5px solid #ea9322;
-  font-weight: 700;
-  font-style: italic;
-  height: 2em;
-  margin: 0 auto;
+#sl-header {
   width: 100%;
-  height: 40px;
 }
-/*THIS IS NOT REGISTERING AT ALL*/
-h1 span {
-  font-weight: 400;
-  font-style: normal;
-  height: 9em;
+#sl-header #header-center {
+  width: 80%;
+  margin: 0 auto;
 }
 h1 {
   font: 'Open Sans', sans-serif;
-  color: #000000;
   font-weight: 700;
+  font-size: 2em;
   font-style: italic;
-  height: 4em;
+  color: #000000;
+  line-height: .125em;
 }
-a {
+h1 span {
+  font-weight: 400;
+  font-style: normal;
+}
+h1 a {
   text-decoration: none;
   list-style-type: none;
 }
-a:link,
-a a:visited {
-  color: #ea9322;
+h1 a:link,
+h1 a:visited {
+  color: #000000;
 }
-a a:hover,
-a a:focus {
+h1 a:hover,
+h1 a:focus {
   color: #ea9322;
 }
 #slider-zone {
@@ -64,7 +58,7 @@ a a:focus {
   border-bottom: 5px solid #ea9322;
   width: 80%;
   margin: 0 auto;
-  height: 246px;
+  height: 300px;
   position: relative;
   background: #888888;
 }
@@ -79,50 +73,53 @@ a a:focus {
 }
 nav #nav-main,
 #nav-footer {
-  border-top: 5px solid #ea9322;
-  margin-bottom: 10px;
-  width: 100%;
-  height: 55px;
-  background: #ffffff;
+  width: 80%;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 2.5em;
 }
 nav #nav-main #nav-center,
-#nav-footer #nav-center {
-  width: 960px;
-  height: 45px;
-  background: #ffffff;
+#nav-footer #nav-center,
+nav #nav-main #footer-center,
+#nav-footer #footer-center {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 1.5em;
   margin: 0 auto;
 }
 nav #nav-main ul,
 #nav-footer ul {
-  width: 90%;
   text-align: center;
   display: block;
   margin: auto;
 }
 nav #nav-main li,
 #nav-footer li {
-  color: #000000;
-  font-weight: 400;
-  font-style: normal;
-  height: 1.5em;
   width: 24.5%;
   display: inline;
   float: left;
-  color: #696969;
 }
 nav #nav-main a,
 #nav-footer a {
   display: block;
   text-decoration: none;
-  color: #696969;
-  font-weight: bold;
+}
+nav #nav-main a:link,
+#nav-footer a:link,
+nav #nav-main a:visited,
+#nav-footer a:visited {
+  color: #000000;
 }
 nav #nav-main a:hover,
-#nav-footer a:hover {
+#nav-footer a:hover,
+nav #nav-main a:focus,
+#nav-footer a:focus {
   color: #ea9322;
 }
-nav #nav-main a .current-menu-item a,
-#nav-footer a .current-menu-item a {
+.current-menu-item a {
   color: #ea9322;
 }
 nav #nav-main {
@@ -166,15 +163,4 @@ nav #nav-main {
 }
 footer {
   width: 100%;
-  background: #056b94;
-}
-#slscc-footer {
-  height: 45px;
-  background: #ffffff;
-  clear: both;
-}
-#footer-center {
-  width: 80%;
-  height: 45px;
-  margin: auto;
 }

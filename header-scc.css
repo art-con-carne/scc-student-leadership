@@ -1,9 +1,12 @@
 .row {
     padding-left: 15px;
+	width: 80%;
 }
 
 #scc-header  {
-
+    background: none repeat scroll 0 0 #008fc5;
+    width: 100%;
+	padding-top: -40px;
 }
 
 .full-width-branded {

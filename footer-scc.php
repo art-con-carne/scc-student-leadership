@@ -1,4 +1,4 @@
-<footer>
+<div id="footer-scc">
 	
     <div class="row">
         <div class="large-12 small-12 columns top-padding">
@@ -62,7 +62,5 @@
         </div>   
 	</div>
     
-</footer>
+<div><!--#footer-scc-->
 
-	</body>
-</html>

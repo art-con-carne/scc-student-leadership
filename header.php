@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<?php include 'header-scc.php'; ?>
+
+
 
 <html <?php language_attributes(); ?>>
 	<head>
@@ -9,9 +10,9 @@
 		<!--[if lt IE 9]> 
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 		<![endif]-->    
-
+	  	<link rel="stylesheet" href="footer-scc.css" type="text/css">
 	  	<link rel="stylesheet/less" href="style.less" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600italic,700italic,300' rel='stylesheet' type='text/css'>
 				
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -27,9 +28,8 @@
 				<div id="header-center">
 
 					<h1>
-						<a href= "<?php echo get_option('home'); ?>" ><strong>Student Leadership</strong> at 
-							<span>Seattle Central College</span>
-						</a>
+						<a href= "<?php echo get_option('home'); ?>" >Student Leadership</a> at 
+						<a href="http://seattlecentral.edu"><span>Seattle Central College</span>
 					</h1>
 
 				</div><!--#header-center-->	
@@ -44,7 +44,7 @@
 			</div><!--#slider-zone-->
 
 			<!-- START NAVIGATION -->
-			<div class="slscc-rule"></div> <!--orange rule-->
+
 			<nav>
 				<div id="nav-main">
 					<div id="nav-center">
@@ -56,7 +56,7 @@
 					</div><!--#nav-center-->		
 				</div><!--#nav-main-->		
 			</nav>
-			<div class="slscc-rule"></div> <!--orange rule-->
+
 			<!-- END NAVIGATION -->
 <!--************************end header**********************-->
 
