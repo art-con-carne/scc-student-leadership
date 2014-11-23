@@ -7,12 +7,6 @@ Semi-Bold 600 Italic - Subheaders, Quotes
 Bold 700
 Bold 700 Italic - Headers, Quote Marks?
 */
-@font-face {
-  font-family: "FontAwesome";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
-}
 [class*="icon-"],
 [class^="icon-"] {
   font-family: FontAwesome;
@@ -333,6 +327,24 @@ footer {
 .college-links {
   position: absolute;
   top: -48px;
+  float: left;
+}
+#donate-contact-dis [class^="icon-"],
+#donate-contact-dis [class*=" icon-"] {
+  padding-right: 3px;
+}
+#donate-contact-dis ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0 0;
+  text-align: center;
+}
+#donate-contact-dis ul li {
+  display: inline;
+}
+#donate-contact-dis ul li a {
+  padding: 0.2em 1em;
+  text-decoration: none;
 }
 /***********MEDIA QUERIES**************/
 @media only screen and (max-width: 825px) {

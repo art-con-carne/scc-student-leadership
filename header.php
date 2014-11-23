@@ -10,9 +10,7 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
 		<![endif]-->    
 
-	  	<link rel="stylesheet/less" href="style.less" type="text/css">
-		<link rel="stylesheet" href="header-scc.css" type="text/css">
-		<link rel="stylesheet" href="footer-scc.css" type="text/css">		
+	  	<link rel="stylesheet/less" href="style.less" type="text/css">	
 		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css"				
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
 				

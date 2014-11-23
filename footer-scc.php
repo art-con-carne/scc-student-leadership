@@ -46,7 +46,7 @@
 
 	<div class="row">
     	<div class="columns">
-       	     <p class="college-links tinyprint">
+       	     <p class="college-links tinyprint text-left">
             THE SEATTLE COLLEGES<br />
             <a href="http://www.seattlecolleges.com" target="_blank">District</a>&nbsp;|&nbsp;
             <a href="http://northseattle.edu" target="_blank">North</a>&nbsp;|&nbsp;
