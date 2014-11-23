@@ -8,6 +8,7 @@
 /*
 Open Sans styles:
 Light 300 - Nav
+Light 300 Italic- Footer
 Normal 400 - Text
 Semi-Bold 600 Italic - Subheaders, Quotes
 Bold 700
@@ -15,6 +16,28 @@ Bold 700 Italic - Headers, Quote Marks?
 */	
 
 
+@font-face {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+}
+
+[class*="icon-"], [class^="icon-"] {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+	color: @color-sl;
+}
+
+[class*="fa-"], [class^="fa-"] {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+	color: @color-sl;
+}
 
 body {
 	background: @color-sl;
@@ -26,24 +49,25 @@ body {
 	font-size: 100%;
 	line-height: 150%;
 	color: @font-color1;
+
 }
 
 #scc-header  {
     background: @color-scc-bg;
     width: 100%;
-	padding-top: -60px;
+	margin-top: -15px;
+
 }
 
-.row {
-    padding-left: 15px;
+#scc-header-center {
 	width: 80%;
 	margin: 0 auto;
+
 }
 
 #header-logo {
-    display: block;
     height: auto;
-    margin: 10px 0 0 15px;
+    margin: 15px 0 0 0;
     width: auto;
 }
 
@@ -52,9 +76,6 @@ header {
 	width: 100%;
 }
 
-
-
-	
 #sl-header {	
 	background: @color-sl;
 	width: 100%;
@@ -207,18 +228,140 @@ footer{
 
 }
 
+
+/********Start SCC FOOTER*************/
+
+/***Start column/row formatting***/
+.row {
+    margin: 0 auto;
+    max-width: 62.5em;
+    width: 100%;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.row.collapse .column, .row.collapse .columns {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.row .row {
+    margin: 0 -0.9375em;
+    max-width: none;
+    width: auto;
+}
+.row .row:before, .row .row:after {
+    content: " ";
+    display: table;
+}
+.row .row:after {
+    clear: both;
+}
+.row .row.collapse {
+    margin: 0;
+    max-width: none;
+    width: auto;
+}
+.row .row.collapse:before, .row .row.collapse:after {
+    content: " ";
+    display: table;
+}
+.row .row.collapse:after {
+    clear: both;
+}
+.column, .columns {
+    float: left;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    position: relative;
+    width: 100%;
+}
+/***end column/row formatting***/
+
 #footer-scc {
     background: @color-scc-bg;
     color: #fff;
     overflow: hidden;
+	clear: both;
+
+	row  {
+		clear: both;
+	}
 }
 
+#footer-scc ul li {
+	text-decoration: none;
+}
 #footer-scc a {
     color: #fff;
 }
 
 #footer-scc h4 {
+	height: 1.5em;
+	font-weight: 300;
     color: #fff !important;
+	text-align: center;
+}
+
+#footer-scc p {
+    color: #fff !important;
+	text-align: center;
+}
+
+.social-media {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+	p {
+		font-family: inherit;
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.6;
+		margin-bottom: 1.25em;
+		text-rendering: optimizeLegibility;
+	} 
+}
+.normalprint {
+    font-size: 1em !important;
+}
+.medprint {
+    font-size: 0.75em !important;
+}
+.smallprint {
+    font-size: 0.8em;
+    margin-bottom: 0.05em !important;
+	margin-top: -1.75em;
+}
+.tinyprint {
+    font-size: 0.7em !important;
+}
+
+.hide-for-small {
+	display: none;
+}
+
+.top-padding {
+    padding-top: 1em;
+}
+
+.social-media {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+}
+.footer-logo {
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+.college-links {
+    position: absolute;
+    top: -48px;
 }
 
 /***********MEDIA QUERIES**************/

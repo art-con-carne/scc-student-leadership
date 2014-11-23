@@ -1,6 +1,6 @@
 
 <div class="row" id="sccc-header">
-   <div class="row" id="header-scc">
+
 		<a href="http://www.seattlecentral.edu">
 			<div class="header-logo-crop">
 				<img src="images/seattle-central-college-logo.png" alt="So where's the Logo already?" class="header-logo">

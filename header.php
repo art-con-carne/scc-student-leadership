@@ -13,8 +13,8 @@
 	  	<link rel="stylesheet/less" href="style.less" type="text/css">
 		<link rel="stylesheet" href="header-scc.css" type="text/css">
 		<link rel="stylesheet" href="footer-scc.css" type="text/css">		
-				
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,600italic,700italic,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css"				
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
 				
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -28,13 +28,13 @@
 		<header>
 		<!--start SCC-HEADER-->
 			<div id="scc-header">
-
+				<div id="scc-header-center" >
 						<a href="http://www.seattlecentral.edu">
 							<div id="header-logo">
 								<img src="images/seattle-central-college-logo.png" alt="So where's the Logo already?">
 							</div><!--.header-logo-->
 						</a>
-
+				</div><!--.scc-header-center-->
 			</div><!--#scc-header-->		
 		<!--end SCC-HEADER-->
 
