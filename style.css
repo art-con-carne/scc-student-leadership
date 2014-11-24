@@ -12,16 +12,16 @@ Bold 700 Italic - Headers, Quote Marks?
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 400;
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 [class*="fa-"],
 [class^="fa-"] {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 400;
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 body {
   background: #ffffff;
@@ -262,9 +262,6 @@ footer {
   overflow: hidden;
   clear: both;
 }
-#footer-scc row {
-  clear: both;
-}
 #footer-scc ul li {
   text-decoration: none;
 }
@@ -272,7 +269,8 @@ footer {
   color: #fff;
 }
 #footer-scc h4 {
-  height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1em;
   font-weight: 300;
   color: #fff !important;
   text-align: center;
@@ -285,6 +283,7 @@ footer {
   position: absolute;
   top: 15px;
   z-index: 1;
+  text-decoration: none;
 }
 .social-media p {
   font-family: inherit;
@@ -301,15 +300,13 @@ footer {
   font-size: 0.75em !important;
 }
 .smallprint {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-bottom: 0.05em !important;
   margin-top: -1.75em;
 }
 .tinyprint {
   font-size: 0.7em !important;
-}
-.hide-for-small {
-  display: none;
+  text-decoration: none;
 }
 .top-padding {
   padding-top: 1em;
@@ -318,6 +315,7 @@ footer {
   position: absolute;
   top: 15px;
   z-index: 1;
+  float: left;
 }
 .footer-logo {
   position: absolute;
@@ -328,6 +326,57 @@ footer {
   position: absolute;
   top: -48px;
   float: left;
+}
+.fa-facebook:before {
+  content: "\f09a";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+}
+.fa-twitter:before {
+  content: "\f099";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+}
+.fa-flickr:before {
+  content: "\f16e";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+}
+.fa-envelope-o:before {
+  content: "\f003";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 .25em 0 1em;
+}
+.fa-money:before {
+  content: "\f0d6";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 .25em 0 .3em;
+}
+.fa-warning:before {
+  content: "\f071";
+  font-family: FontAwesome;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 .25em 0 .3em;
+}
+.fa-4x {
+  font-size: 2em;
+}
+.text-left {
+  text-align: left;
 }
 #donate-contact-dis [class^="icon-"],
 #donate-contact-dis [class*=" icon-"] {

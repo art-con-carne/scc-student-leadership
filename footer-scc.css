@@ -1,16 +1,4 @@
-#footer-scc {
-    background: #0F90C7;
-    color: #fff;
-    overflow: hidden;
-}
 
-#footer-scc a {
-    color: #fff;
-}
-
-#footer-scc h4 {
-    color: #fff !important;
-}
 
 .row.collapse .column, .row.collapse .columns {
     float: left;
