@@ -52,6 +52,9 @@
 			<div id="slider-zone">
 				<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 				<div id="slider-panel">
+				<div id="slider-panel-words">
+				<p>Creating connections</p></p>for student success.</p>
+				</div>
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
 

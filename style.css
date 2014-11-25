@@ -84,6 +84,15 @@ h1 a:hover,
 h1 a:focus {
   color: #ea9322;
 }
+
+p {
+	color:#ffffff;
+	margin: 1em;
+    font-weight: bold;
+	font-style: italic;
+	font-size: 2em;
+}
+
 #slider-zone {
   border-top: 5px solid #ea9322;
   border-bottom: 5px solid #ea9322;
@@ -93,16 +102,23 @@ h1 a:focus {
   position: relative;
   background: #888888;
   overflow: hidden;
+  z-index: -2;
 }
 #slider-panel {
   float: right;
   width: 32%;
   height: 104px;
-  background: #999999;
+  background: opacity 0.4 #ea9322;
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
+
+#slider-panel-words p{
+	padding:2%;
+}
+
 nav #nav-main,
 #nav-footer {
   width: 80%;
