@@ -92,6 +92,7 @@ h1 a:focus {
   height: 300px;
   position: relative;
   background: #888888;
+  overflow: hidden;
 }
 #slider-panel {
   float: right;
