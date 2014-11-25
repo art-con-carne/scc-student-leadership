@@ -5,7 +5,7 @@
 
 	<?php else : ?>
 	<p>
-		Student Leadership facilitates leadership development and supports student involvement, creating connections for student success.
+			&#8220 Student Leadership facilitates leadership development and supports student involvement, creating connections for student success.	&#8221
 	</p>
 	
 	<h3><?php _e('Search'); ?></h3>
