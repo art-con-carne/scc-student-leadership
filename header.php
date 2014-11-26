@@ -11,8 +11,9 @@
 		<![endif]-->    
 
 	  	<link rel="stylesheet/less" href="style.less" type="text/css">	
-		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css"				
+		<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">			
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	  	<link rel="stylesheet/css" href="meteor-slides.css" type="text/css">			
 				
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -53,7 +54,8 @@
 	
 			
 			<div id="slider-zone">
-				<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+
+				<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("slideshow-main", ""); } ?>
 				<div id="slider-panel">
 	
 				<p>Creating connections</p><p>for student success.</p>
