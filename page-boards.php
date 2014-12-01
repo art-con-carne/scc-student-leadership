@@ -7,7 +7,11 @@
 <!-- START CONTENT -->
 <div id="main">
     <div id="content">
-        <?php
+        <?php global $post; ?>
+		<h2><?php echo $post->post_title;?></h2>
+		<p><?php echo $post->post_content;?></p>
+		
+		<?php
 			$boardlist = array('category_name' => 'board-info');
 			$query = new WP_Query( $boardlist );
 		?>
