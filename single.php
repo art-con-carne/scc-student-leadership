@@ -18,7 +18,8 @@
 				
 				$query = new WP_Query(
 					array(
-						'category_name' => $slug
+						'category_name' => $slug,
+						'posts_per_page' => -1
 						)
 					);
 			?>	
@@ -33,7 +34,7 @@
    
 			<?php endwhile; 
 			else:?>
-				<p>Sorry, no posts to be found.</p>
+				<h5>Sorry, no posts yet but please check back soon.</h5>
 			<?php endif; ?>
     </div><!--/content-->
 
