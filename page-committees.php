@@ -12,7 +12,13 @@
 		<p><?php echo $post->post_content;?></p>
 		
 		<?php
-			$commlist = array('category_name' => 'committee-info');
+			$commlist = array(
+							'category_name' => 'committee-info',
+							'posts_per_page' => -1,
+							'orderby' => 'title',
+							'order' => 'ASC'
+							);
+							
 			$query = new WP_Query( $commlist );
 		?>
 	

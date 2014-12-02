@@ -12,7 +12,13 @@
 		<p><?php echo $post->post_content;?></p>
 		
 		<?php
-			$clublist = array('category_name' => 'club-info');
+			$clublist = array(
+							'category_name' => 'club-info',
+							'posts_per_page' => -1,
+							'orderby' => 'title',
+							'order' => 'ASC'
+							);
+							
 			$query = new WP_Query( $clublist );
 		?>
 	
