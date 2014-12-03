@@ -16,7 +16,7 @@
    
 			<?php endwhile; 
 			else:?>
-				Sorry, no posts to be found.
+				<h4>Sorry, no posts yet but please check back soon.</h4>
 			<?php endif; ?>
     </div>
 

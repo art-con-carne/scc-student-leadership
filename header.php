@@ -22,7 +22,12 @@
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 		
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	
+		<script class="ai1ec-widget-placeholder" data-widget="ai1ec_agenda_widget" data-events_seek_type="days" data-days_per_page="7">
+  		(function(){var d=document,s=d.createElement('script'),
+		i='ai1ec-script';if(d.getElementById(i))return;s.async=1;
+		s.id=i;s.src='http://localhost/scc-student-leadership/?ai1ec_js_widget';
+		d.getElementsByTagName('head')[0].appendChild(s);})();
+		</script>
 
 		<?php /*wp_head();*/ ?>
 	</head>

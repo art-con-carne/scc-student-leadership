@@ -7,14 +7,24 @@
 <!-- START CONTENT -->
 <div id="main">
     <div id="content">
-        <?php
-			$commlist = array('category_name' => 'committee-info');
+        <?php global $post; ?>
+		<h2><?php echo $post->post_title;?></h2>
+		<p><?php echo $post->post_content;?></p>
+		
+		<?php
+			$commlist = array(
+							'category_name' => 'committee-info',
+							'posts_per_page' => -1,
+							'orderby' => 'title',
+							'order' => 'ASC'
+							);
+							
 			$query = new WP_Query( $commlist );
 		?>
 	
 		<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
             <div id="post-<?php the_ID(); ?>">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2>     
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>     
             </div><!--/post-->
    
             <?php endwhile; 
