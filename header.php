@@ -40,7 +40,7 @@
 				<div id="scc-header-center" >
 						<a href="http://www.seattlecentral.edu">
 							<div id="header-logo">
-								<img src="<?php bloginfo('template_directory');?>/images/SCC/seattle-central-college-logo.svg" alt="SCC Logo" class="header-logo">
+								<img src="<?php bloginfo('template_directory');?>/images/seattle-central-college-logo.png" alt="SCC Logo" class="header-logo">
 							</div><!--.header-logo-->
 						</a>
 				</div><!--.scc-header-center-->
