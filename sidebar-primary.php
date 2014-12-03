@@ -18,7 +18,7 @@
 					<img src="<?php echo $image; ?>" />
 			<?php 
 			} else { ?>
-			   <img src="<?php bloginfo('template_directory');?>/images/Student-Leadership/SL2010.png" alt="SCCSL Logo" width="50%" height="50%"/>
+			   <img src="http://54.213.153.237/wp-content/uploads/2014/11/SL2010-site.png" alt="SCCSL Logo" />
 			<?php } ?>
 		
 			<?php endif; ?>	
