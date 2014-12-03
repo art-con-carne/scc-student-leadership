@@ -45,7 +45,7 @@
 
 					<h1>
 						<a href= "<?php echo get_option('home'); ?>" >Student Leadership</a> at 
-						<a href="http://seattlecentral.edu"><span>Seattle Central College</span>
+						<a href="http://seattlecentral.edu"><span>Seattle Central College</span></a>
 					</h1>
 
 				</div><!--#header-center-->	
