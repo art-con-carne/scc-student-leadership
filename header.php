@@ -62,10 +62,10 @@
 			
 			<div id="slider-zone">
 
-				<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow("slideshow-main", ""); } ?>
+				<?php if(function_exists("get_smooth_slider_recent")){get_smooth_slider_recent();}?>
 				<div id="slider-panel">
 	
-				<p>Creating connections</p><p>for student success.</p>
+				<h3>Creating connections for student success.</h3>
 	
 				</div><!--#slider-panel-->		
 			</div><!--#slider-zone-->
