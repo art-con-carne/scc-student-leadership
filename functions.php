@@ -1,5 +1,52 @@
 <?php
 
+add_action('init', 'sccsl_create_post_type');
+
+function sccsl_create_post_type() {
+  register_post_type('sccsl-org', array(
+    'labels' => array(
+      'name' => 'Organizations',
+      'singular_name' => 'Organization',
+    ),
+	'public' => true,
+	'publicly_queryable' => true,
+    'menu_position' => 5,
+	'taxonomies' => array('category'),
+    'hierarchical' => false,
+	'register_meta_box_cb' => 'add_sccsl_metabox',
+    'supports' => array( 'title', 'thumbnail', 'revisions', 'editor','post-formats', 'custom-fields' ),
+  ));
+}
+
+function add_sccsl_metabox() {
+    add_meta_box('sccsl_orgs_type', 'Org Type', 'sccsl_orgs_location', 'orgs', 'side', 'default');
+
+}
+
+function sccsl_orgs_type() {
+	global $post;
+	
+	echo '<input type="hidden" name="eventmeta_noncename" id="orgmeta_noncename" value="' . 
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+	
+	
+	$org = get_post_meta($post->ID, '_org', true);
+	
+	// Echo out the field
+	echo '<input type="text" name="_org" value="' . $org  . '" class="widefat" />';
+
+}
+
+
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function add_my_post_types_to_query( $query ) {
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'post', 'page', 'sccsl-org' ) );
+  return $query;
+}
+
+
 function sccslResources(){
 
 	wp_enqueue_style('style', get_stylesheet_uri());
@@ -64,5 +111,6 @@ function my_register_sidebars() {
 			'after_title' => '</h4>'
 		)
 	);
-	/* Repeat register_sidebar() code for additional sidebars. */
+	
+
 }
