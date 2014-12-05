@@ -18,26 +18,6 @@ function sccsl_create_post_type() {
   ));
 }
 
-function add_sccsl_metabox() {
-    add_meta_box('sccsl_orgs_type', 'Org Type', 'sccsl_orgs_location', 'orgs', 'side', 'default');
-
-}
-
-function sccsl_orgs_type() {
-	global $post;
-	
-	echo '<input type="hidden" name="eventmeta_noncename" id="orgmeta_noncename" value="' . 
-	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
-	
-	
-	$org = get_post_meta($post->ID, '_org', true);
-	
-	// Echo out the field
-	echo '<input type="text" name="_org" value="' . $org  . '" class="widefat" />';
-
-}
-
-
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
 function add_my_post_types_to_query( $query ) {
