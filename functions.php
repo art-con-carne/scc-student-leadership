@@ -13,7 +13,6 @@ function sccsl_create_post_type() {
     'menu_position' => 5,
 	'taxonomies' => array('category'),
     'hierarchical' => false,
-	'register_meta_box_cb' => 'add_sccsl_metabox',
     'supports' => array( 'title', 'thumbnail', 'revisions', 'editor','post-formats', 'custom-fields' ),
   ));
 }

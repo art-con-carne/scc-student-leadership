@@ -7,7 +7,6 @@
 <!-- START CONTENT -->
 <div id="main">
     <div id="content">
-        <?php global $post; ?>
 		<h2><?php echo $post->post_title;?></h2>
 		<p><?php echo $post->post_content;?></p>
 		
