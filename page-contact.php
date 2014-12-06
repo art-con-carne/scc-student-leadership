@@ -86,7 +86,6 @@ else if ($_POST['submitted']) my_contact_form_generate_response("error", $missin
             </div> <!--end entry content class -->
            </article> <!--  end #post -->
             
-
   
            <div id="respond"> 
 		    <?php echo $response; ?>
