@@ -13,6 +13,7 @@
 		
 		<?php
 			$commlist = array(
+							'post_type' => 'sccsl-org',
 							'category_name' => 'committee-info',
 							'posts_per_page' => -1,
 							'orderby' => 'title',
