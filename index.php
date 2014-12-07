@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <div id="center">
+	
+
 
 	<div id="main">
 
