@@ -47,7 +47,7 @@
 
 	<div class="row">
     	<div class="columns">
-       	    <p class="college-links tinyprint text-left">
+       	    <p class="college-links-head tinyprint text-left">
             THE SEATTLE COLLEGES<br>
 			</p>
 			<p class="college-links tinyprint">

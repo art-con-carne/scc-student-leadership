@@ -233,7 +233,7 @@ nav #nav-main {
   clear: both;
   border-top: 5px solid #ea9322;
 }
-#middle {
+#center {
   width: 80%;
   margin: auto;
 }
@@ -299,6 +299,21 @@ nav #nav-main {
 .sl-quote span {
   font-size: 150%;
   font-weight: bold;
+}
+.error {
+  padding: 4px .5%;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+}
+.success {
+  padding: 4px .5%;
+  border: 1px #0f90c7;
+  color: blue;
+  border-radius: 3px;
+}
+form span {
+  color: #ea9322;
 }
 footer {
   width: 100%;
@@ -426,6 +441,11 @@ footer {
   right: 0;
   top: -90px;
 }
+.college-links-head {
+  position: absolute;
+  top: -64px;
+  float: left;
+}
 .college-links {
   position: absolute;
   top: -48px;
@@ -481,6 +501,7 @@ footer {
 }
 .text-left {
   text-align: left;
+  position: absolute;
 }
 #donate-contact-dis [class^="icon-"],
 #donate-contact-dis [class*=" icon-"] {
