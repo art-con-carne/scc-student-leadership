@@ -1,7 +1,8 @@
 <?php
 
 /*
-Template Name: Contact
+Template Name: Contact Form Page Template
+Template: scc-student-leadership
 */
 
 	//response generation function
