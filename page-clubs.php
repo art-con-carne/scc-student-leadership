@@ -7,12 +7,12 @@
 <!-- START CONTENT -->
 <div id="main">
     <div id="content">
-        <?php global $post; ?>
 		<h2><?php echo $post->post_title;?></h2>
 		<p><?php echo $post->post_content;?></p>
 		
 		<?php
 			$clublist = array(
+							'post_type' => 'sccsl-org',
 							'category_name' => 'club-info',
 							'posts_per_page' => -1,
 							'orderby' => 'title',

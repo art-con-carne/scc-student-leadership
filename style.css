@@ -119,13 +119,38 @@ h1 a:hover,
 h1 a:focus {
   color: #ea9322;
 }
+h2 {
+  font: 'Open Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.6em;
+  font-style: italic;
+  line-height: 1.6em;
+}
+h3 {
+  font: 'Open Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.8em;
+}
+h4 {
+  font: 'Open Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.0em;
+}
 #slider-zone {
+  margin: auto;
   border-top: 5px solid #ea9322;
   border-bottom: 5px solid #ea9322;
   width: 80%;
   margin: 0 auto;
-  height: 288px;
-  background: #888888;
+  height: auto;
+  background: #ffffff;
   position: relative;
 }
 #slider-panel {
@@ -205,43 +230,63 @@ nav #nav-main {
 }
 #nav-footer {
   width: 100%;
+  clear: both;
   border-top: 5px solid #ea9322;
 }
-#wrapper {
-  clear: both;
-  width: 960px;
-  margin: 0px auto;
-  overflow: hidden;
-}
 #middle {
+  width: 80%;
+  margin: auto;
+}
+#main {
   width: 100%;
-  clear: both;
 }
 #sidebar-primary {
   float: left;
-  width: 28%;
+  width: 25%;
+  padding: 10px 0 0 0;
 }
 #sidebar-primary img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#main {
+  width: 50%;
   float: right;
-  width: 72%;
 }
 #content {
   float: left;
-  width: 58%;
+  width: 40%;
+  padding: 0 0 0 4%;
+}
+#content p {
+  font-size: 1.0em;
+  font-style: normal;
+}
+#content .resource-link,
+#content .training-link {
+  font-style: italic;
 }
 #sidebar-secondary {
-  float: right;
-  width: 40%;
+  float: left;
+  width: 25%;
+  padding: 0 0 0 3%;
 }
 #sidebar-secondary p {
   font-size: 1.2em;
   font-style: italic;
-  padding: 10px 55px;
+  width: 68%;
+  text-indent: -0.75em;
+  padding-left: .75em;
+}
+#sidebar-secondary #searchform,
+#sidebar-secondary #meta-3 {
+  margin-left: 4%;
+}
+#sidebar-secondary .screen-reader-text {
+  display: block;
+}
+#sidebar-secondary ul {
+  padding: 0 0 0 6%;
+}
+#sidebar-secondary li {
+  font-style: italic;
 }
 .sl-quote {
   font-family: 'Open Sans', sans-serif;
@@ -250,7 +295,6 @@ nav #nav-main {
   font-size: 1.3em;
   line-height: 1.75em;
   width: 80%;
-  float: left;
 }
 .sl-quote span {
   font-size: 150%;

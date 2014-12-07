@@ -145,14 +145,42 @@ h1 {
 				}
 }
 
+h2 {
+	font: 'Open Sans', sans-serif;
+	color: @font-color1;
+	font-weight: 600;
+	font-size: 1.6em;
+	font-style: italic;
+	line-height: 1.6em;
+}
+
+h3 {
+	font: 'Open Sans', sans-serif;
+	color: @font-color1;
+	font-weight: 600;
+	font-size: 1.4em;
+	font-style: italic;
+	line-height: 1.8em;
+}
+
+h4 {
+	font: 'Open Sans', sans-serif;
+	color: @font-color1;
+	font-weight: 600;
+	font-size: 1.4em;
+	font-style: italic;
+	line-height: 1.0em;
+}
+
 #slider-zone {
+	margin: auto;
 	border-top: @std-border;
 	border-bottom: @std-border;
 	width: 80%;
 	margin: 0 auto;
-	height: 288px;
+	height: auto;
 	position: relative;
-	background: #888888;
+	background: #ffffff;
 	position: relative;
 }
 
@@ -224,52 +252,69 @@ nav #nav-main {
 
 #nav-footer {
 	width: 100%;
-	border-top: @std-border;
-
-}
-
-
-
-
-#wrapper {
 	clear: both;
-	width: 960px;
-	margin: 0px auto;
-	overflow: hidden;
+	border-top: @std-border;
 }
 
 #middle {
+	width: 80%;
+	margin: auto;
+}
+
+#main {
 	width: 100%;
-	clear: both;
+
 }
 
 #sidebar-primary {
 	float: left;
-	width: 28%;
+	width: 25%;
+	padding: 10px 0 0 0;
 		img {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width: 50%;
+		float: right;
 		}
-}
-
-#main {
-	float: right;
-	width: 72%;
 }
 
 #content {
 	float: left;
-	width: 58%;
+	width: 40%;
+	padding: 0 0 0 4%;
+		p {
+		font-size: 1.0em;
+		font-style: normal;
+
+		}	
+		.resource-link, .training-link {
+			font-style: italic;
+		}
+
 }
 
 #sidebar-secondary {
-	float: right;
-	width: 40%;
+	float: left;
+	width: 25%;
+	padding: 0 0 0 3%;
 		p {
 		font-size: 1.2em;
 		font-style: italic;
-		padding: 10px 55px;
+		width: 68%;
+		text-indent: -.75em;
+		padding-left: .75em;
+		}
+		#searchform, #meta-3{
+		margin-left: 4%;
+		}
+
+		.screen-reader-text {
+			display: block;
+		}
+		ul {
+		padding: 0 0 0 6%;
+		}
+		li {
+		font-style: italic;
 		}
 }
 
@@ -280,7 +325,7 @@ nav #nav-main {
 		font-size: 1.3em;
 		line-height: 1.75em;
 		width: 80%;
-		float: left;
+
 		span  {
 			font-size: 150%;
 			font-weight: bold;
@@ -288,9 +333,9 @@ nav #nav-main {
 
 }
 
+
 footer{
 	width: 100%;
-
 }
 
 

@@ -62,12 +62,12 @@
 			
 			<div id="slider-zone">
 
-				<?php if(function_exists("get_smooth_slider_recent")){get_smooth_slider_recent();}?>
+
+				
 				<div id="slider-panel">
-	
 				<h3>Creating connections for student success.</h3>
-	
-				</div><!--#slider-panel-->		
+				</div><!--#slider-panel-->	
+				
 			</div><!--#slider-zone-->
 
 			<!-- START NAVIGATION -->

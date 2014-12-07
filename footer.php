@@ -1,8 +1,8 @@
-		</div><!--/main-->
-	</div><!--/wrapper -->
-		
+
 		<footer>
+		
 			<div id="nav-footer">
+			
 				<div id="footer-center">
 
 							<?php wp_nav_menu( array( 
@@ -12,7 +12,9 @@
 							) ); ?>
 
 				</div><!--#footer-center-->
+				
 			</div><!--#nav-footer-->
+			
 		</footer>
 		
 <?php get_template_part("footer", "scc"); ?>
