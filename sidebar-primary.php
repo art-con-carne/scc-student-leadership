@@ -6,11 +6,13 @@
 
 	<?php else : ?>
 
+
 	<?php
 		global $wp_query;
 		$postid = $wp_query->post->ID;
 		$image = get_post_meta($postid, 'board', true);
 		wp_reset_query();
+
 
 		if ( $image != '' ) { ?>
 			<img src="<?php echo $image; ?>" />

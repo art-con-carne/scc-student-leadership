@@ -1,5 +1,31 @@
 <?php
 
+add_action('init', 'sccsl_create_post_type');
+
+function sccsl_create_post_type() {
+  register_post_type('sccsl-org', array(
+    'labels' => array(
+      'name' => 'Organizations',
+      'singular_name' => 'Organization',
+    ),
+	'public' => true,
+	'publicly_queryable' => true,
+    'menu_position' => 5,
+	'taxonomies' => array('category'),
+    'hierarchical' => false,
+    'supports' => array( 'title', 'thumbnail', 'revisions', 'editor','post-formats', 'custom-fields' ),
+  ));
+}
+
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function add_my_post_types_to_query( $query ) {
+  if ( is_home() && $query->is_main_query() )
+    $query->set( 'post_type', array( 'post', 'page', 'sccsl-org' ) );
+  return $query;
+}
+
+
 function sccslResources(){
 
 	wp_enqueue_style('style', get_stylesheet_uri());
@@ -64,5 +90,6 @@ function my_register_sidebars() {
 			'after_title' => '</h4>'
 		)
 	);
-	/* Repeat register_sidebar() code for additional sidebars. */
+	
+
 }

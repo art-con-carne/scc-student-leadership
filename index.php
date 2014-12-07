@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="middle">
+<div id="center">
 
 	<div id="main">
 
@@ -29,6 +29,6 @@
 
 	</div><!--/main-->
 	
-</div><!--/middle-->
+</div><!--/center-->
 
 <?php get_footer(); ?>
