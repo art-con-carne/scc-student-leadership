@@ -10,7 +10,7 @@
 	<?php
 		global $wp_query;
 		$postid = $wp_query->post->ID;
-		$image = get_post_meta($postid, 'board', true);
+		$image = get_post_meta($postid, 'board-logo', true);
 		wp_reset_query();
 
 
