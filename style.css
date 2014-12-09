@@ -143,11 +143,13 @@ h4 {
   font-style: italic;
   line-height: 1.0em;
 }
-#slider-zone {
+#slider-panel-nav-wrap {
+  width: 100%;
   margin: auto;
+}
+#slider-zone {
   border-top: 5px solid #ea9322;
   border-bottom: 5px solid #ea9322;
-  width: 80%;
   margin: 0 auto;
   height: auto;
   background: #ffffff;
@@ -176,7 +178,6 @@ h4 {
 }
 nav #nav-main,
 #nav-footer {
-  width: 80%;
   font-weight: 400;
   margin: auto;
   height: 2.5em;
@@ -224,9 +225,10 @@ nav #nav-main a:focus,
 .current-menu-item a {
   color: #ea9322;
 }
-nav #nav-main {
+#nav-main {
   border-bottom: 5px solid #ea9322;
   margin-bottom: 20px;
+  width: 80%;
 }
 #nav-footer {
   width: 100%;

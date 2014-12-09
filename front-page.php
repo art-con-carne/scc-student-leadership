@@ -7,15 +7,18 @@
 <!-- START CONTENT -->
 <div id="main">
     <div id="content">
-        <h2>Student Leadership at SCC</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa turpis, auctor nec massa ut, elementum gravida sem. Sed lacinia scelerisque nisi, nec accumsan lectus dapibus at. Sed tempor risus sit amet dapibus condimentum. Phasellus aliquam faucibus ipsum ut finibus. Suspendisse potenti. Morbi finibus dui vitae nunc gravida consectetur. Donec vehicula congue rhoncus. Praesent auctor commodo urna vitae tempor. Pellentesque a nunc orci. Aliquam fermentum quam sit amet lacinia scelerisque.
-		</p>
-		<p>
-            dolor vel libero volutpat, vel interdum enim faucibus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean massa turpis, auctor nec massa ut, elementum gravida sem. Sed lacinia scelerisque nisi, nec accumsan lectus dapibus at. Sed tempor risus sit amet dapibus condimentum. Phasellus aliquam faucibus ipsum ut finibus. Suspendisse potenti. Morbi finibus dui vitae nunc gravida consectetur. Donec vehicula congue rhoncus. Praesent auctor commodo urna vitae tempor. Pellentesque a nunc orci. Aliquam fermentum quam sit amet lacinia scelerisque. Sed porttitor purus in eros congue, eget facilisis lacus luctus.
-        </p>
-    </div><!--/content-->
+    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<div id="post-<?php the_ID(); ?>">
+		        <h2><?php the_title(); ?></h2>     
+				<?php the_content('<p class="serif">More &raquo;</p>'); ?>
+				<?php wp_link_pages(); ?>
+			</div>
+   
+			<?php endwhile; 
+			else:?>
+				<h4>Sorry, no posts yet but please check back soon.</h4>
+			<?php endif; ?>
+    </div>
 
 <!-- START SIDEBAR -->
 <?php get_sidebar( 'secondary' ); ?>
