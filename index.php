@@ -21,16 +21,16 @@
 					</div><!--/post-->
 		   
 					<?php endwhile; endif; ?>
-			</div><!--/content-->
+			</div><!--#content-->
 			
 		<!-- END CONTENT -->	
-
+		
 		<!-- START SIDEBAR -->
 		<?php get_sidebar( 'secondary' ); ?>
 		<!-- END SIDEBAR -->
 
-	</div><!--/main-->
+	</div><!--#main-->
 	
-</div><!--/center-->
+</div><!--#center-->
 
 <?php get_footer(); ?>
