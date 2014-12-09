@@ -143,18 +143,18 @@ h4 {
   font-style: italic;
   line-height: 1.0em;
 }
+#slider-panel-nav-wrap {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #slider-zone {
-  margin: auto;
   border-top: 5px solid #ea9322;
   border-bottom: 5px solid #ea9322;
-  width: 80%;
   margin: 0 auto;
   height: auto;
   background: #ffffff;
   position: relative;
-}
-.meteor-slides.nav-both {
-  margin-bottom: 0px;
 }
 #slider-panel {
   float: right;
@@ -179,7 +179,6 @@ h4 {
 }
 nav #nav-main,
 #nav-footer {
-  width: 80%;
   font-weight: 400;
   margin: auto;
   height: 2.5em;
@@ -223,6 +222,9 @@ nav #nav-main a:hover,
 nav #nav-main a:focus,
 #nav-footer a:focus {
   color: #ea9322;
+}
+#nav-footer {
+  width: 80%;
 }
 .current-menu-item a {
   color: #ea9322;
