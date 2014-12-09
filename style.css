@@ -320,21 +320,6 @@ nav #nav-main {
   font-size: 150%;
   font-weight: bold;
 }
-.error {
-  padding: 4px .5%;
-  border: 1px solid red;
-  color: red;
-  border-radius: 3px;
-}
-.success {
-  padding: 4px .5%;
-  border: 1px #0f90c7;
-  color: blue;
-  border-radius: 3px;
-}
-form span {
-  color: #ea9322;
-}
 footer {
   width: 100%;
 }
