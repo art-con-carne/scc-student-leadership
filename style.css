@@ -153,6 +153,9 @@ h4 {
   background: #ffffff;
   position: relative;
 }
+.meteor-slides.nav-both {
+  margin-bottom: 0px;
+}
 #slider-panel {
   float: right;
   width: 32%;
