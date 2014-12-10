@@ -62,7 +62,7 @@
 	
 	<div class="row">
 		<div class="columns top-padding">
-			<img class="footer-logo"src="http://54.213.153.237/wp-content/uploads/2014/12/seattle-central-college-stack.png" alt="Seattle Central College" >
+			<img class="footer-logo"src="images/seattle-central-college-stack.png" alt="Seattle Central College" >
 		</div>
 	</div>
 

@@ -13,6 +13,7 @@
 	  	<!--<link rel="stylesheet/less" href="style.less" type="text/css">	-->
 		<!--<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">-->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="footer-sc.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet/css" href="meteor-slides.css" type="text/css">
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -30,6 +31,8 @@
 			s.id=i;s.src='http://54.213.153.237/?ai1ec_js_widget';
 			d.getElementsByTagName('head')[0].appendChild(s);})();
 		</script>
+		
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
 
 		<?php wp_head(); ?>
 	</head>
