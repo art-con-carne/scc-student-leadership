@@ -238,14 +238,6 @@ nav #nav-main {
   clear: both;
   border-top: 5px solid #ea9322;
 }
-a.button {
-  display: inline-block;
-  font-weight: bold;
-  height: 31px;
-  padding-right: 10px;
-  color: #ea9322;
-  text-decoration: none;
-}
 #center {
   width: 80%;
   margin: auto;

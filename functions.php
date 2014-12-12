@@ -50,13 +50,18 @@ function register_my_menus() {
 
 }
 
-/*shortcode for contact us -local pages/posts*/
-function sButton($atts, $content = null) {
-   extract(shortcode_atts(array('link' => '#'), $atts));
-   return '<a class="button" href="'.$link.'"><span>' . do_shortcode($content) . '</span></a>';
+/* Add custom menus to Dashboard > Menus */       
+if ( function_exists( 'register_nav_menus' ) ) {
+	register_nav_menus(
+		array(
+		  'main-menu' => 'Main Menu',
+		  'footer_menu' => 'Footer Menu',
+		  'clubs-menu' => 'Clubs Menu',
+		  'committees-menu' => 'Committees Menu',
+		  'boards-menu' => 'Boards Menu'
+		)
+	);
 }
-add_shortcode('button', 'sButton');
-
 
 /*Contact Shortcode*/
 add_shortcode('contact', 'contactUs');
