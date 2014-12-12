@@ -63,13 +63,6 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	);
 }
 
-/*Contact Shortcode
-add_shortcode('contact', 'contactUs');
-function contactUs()
- {
-   return <form action="http://54.213.153.237/contact/"><input type="submit" value="Contact Us!" /></form>;
- }
-*/
 
 add_action( 'widgets_init', 'my_register_sidebars' );
 
