@@ -54,7 +54,7 @@
 				<div id="sl-header-center">
 
 					<h1>
-						<a href= "http://localhost/web210/?page_id=7" >Student Leadership</a> at 
+						<a href= "<?php echo get_option('home'); ?>" >Student Leadership</a> at 
 						<a href="http://seattlecentral.edu"><span>Seattle Central College</span></a>
 					</h1>
 
