@@ -51,28 +51,30 @@
 		<!--end SCC-HEADER-->
 
 			<div id="sl-header">
-				<div id="header-center">
+				<div id="sl-header-center">
 
 					<h1>
 						<a href= "<?php echo get_option('home'); ?>" >Student Leadership</a> at 
 						<a href="http://seattlecentral.edu"><span>Seattle Central College</span></a>
 					</h1>
 
-				</div><!--#header-center-->	
-			</div><!--#sl-header-->		
-
-	
-			<div id="slider-panel-nav-wrap">
-			<div id="slider-zone">
+					<div id="slider-panel-nav-wrap">
+					<div class="slider-space"></div>
+						<div id="slider-zone">
+						
+								<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+							
+							<div id="slider-panel">
+							<h3>Creating connections for student success.</h3>
+							</div><!--#slider-panel-->	
+							
+						</div><!--#slider-zone-->
+					<div class="slider-space"></div>	
+					</div><!--#slider-panel-nav-wrap-->
 			
-			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-				
-				<div id="slider-panel">
-				<h3>Creating connections for student success.</h3>
-				</div><!--#slider-panel-->	
-				
-			</div><!--#slider-zone-->
-
+			</div><!--#sl-header-center-->	
+		</div><!--#sl-header-->				
+			
 			<!-- START NAVIGATION -->
 
 			<nav>

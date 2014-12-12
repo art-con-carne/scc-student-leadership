@@ -87,41 +87,6 @@ body {
 	color: @font-color1;
 }
 
-
-
-#scc-header  {
-    background: @color-scc-bg;
-    width: 100%;
-	margin-top: -15px;
-
-}
-
-#scc-header-center {
-	width: 80%;
-	margin: 0 auto;
-
-}
-
-#header-logo {
-    height: auto;
-    margin: 15px 0 0 0;
-    width: auto;
-}
-
-header {
-	margin-top: 0px;
-	width: 100%;
-}
-
-#sl-header {	
-	background: @color-sl;
-	width: 100%;
-		#header-center  {
-			width: 80%;
-			margin: 0 auto;
-		}
-}
-
 h1 {
 	font: 'Open Sans', sans-serif;
 	color: @font-color1;
@@ -172,11 +137,57 @@ h4 {
 	line-height: 1.0em;
 }
 
+h5  {
+	font: 'Open Sans', sans-serif;
+	color: @font-color1;
+	font-weight: 400;
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.0em;
+}
+
+
+header {
+	margin-top: 0px;
+	width: 100%;
+}
+
+#scc-header  {
+    background: @color-scc-bg;
+    width: 100%;
+	margin-top: -15px;
+
+}
+
+#scc-header-center {
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+#header-logo {
+    height: auto;
+    margin: 15px 0 0 0;
+    width: auto;
+}
+
+
+#sl-header {
+	background: @color-sl;
+	width: 100%;
+	#sl-header-center {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 
 #slider-panel-nav-wrap {
 	width: 100%;
 	margin: auto;
 }
+
+
 
 #slider-zone {
 	border-top: @std-border;
@@ -186,9 +197,11 @@ h4 {
 	position: relative;
 	background: #ffffff;
 	position: relative;
-	width: 80%;
+	width: 100%;
 }
-
+#slider-zone  img{
+	width: 100%;
+}
 
 #slider-panel {
 	float: right;
@@ -320,6 +333,71 @@ nav #nav-main, #nav-footer {
 
 }
 
+.sl-button  {
+	border: 2px solid #eaa955;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 0 40px;
+	::before  {
+		padding: 1em 0;
+	}
+	::after  {
+		padding: 1em 0;
+	}
+	::-moz-focus-inner {
+		border: 0;
+	}
+	:link {
+		border: 2px solid #eaa955;
+		color: #444;
+	}
+	:visited {
+		border: 2px solid #444;
+		color: #444;
+	}
+	:hover  {
+		border: 2px solid #e88709;
+		color: #fff;
+		background: rgba(232, 135, 9, 0.50);
+	}
+	:active  {
+		border: 2px solid #e88709;
+		color: #fff;
+		-webkit-box-shadow: inset 2px 2px 3px 3px rgba(232, 135, 9, 0.50);
+		-moz-box-shadow: inset 2px 2px 3px 3px rgba(232, 135, 9, 0.50);
+		box-shadow: inset 2px 2px 3px 3px rgba(232, 135, 9, 0.50);
+		cursor: pointer;
+	}
+}
+
+.button-box {
+	margin: auto;
+	width: 80%;
+}
+
+#asc-contact {
+	margin: auto;
+	width: auto;
+}
+
+#asc-who {
+	margin: auto;
+	width: auto;
+}
+
+.sl-button-inline  {
+	margin: 0;
+	display: inline;
+}
+
+#asc-const {
+	margin: auto;
+}
+
+#asc-bylaws {
+	margin: auto;
+}
+
 #sidebar-secondary {
 	float: left;
 	width: 25%;
@@ -353,13 +431,24 @@ nav #nav-main, #nav-footer {
 		font-size: 1.3em;
 		line-height: 1.75em;
 		width: 80%;
-
-		span  {
-			font-size: 150%;
+}		
+.sl-quote:before {
+			font-size: 200%;
+			content: open-quote;
 			font-weight: bold;
+			line-height: 0.1em;
+			margin-right: 0.0em;
+			vertical-align: -0.15em;
+		}
+.sl-quote:after {
+			font-size: 200%;
+			content: close-quote;
+			font-weight: bold;
+			margin-right: 0.0em;
+			vertical-align: -0.15em;
 		}
 
-}
+
 
 
 /*--contact form --*/
@@ -696,6 +785,7 @@ footer{
 }
 
 /***********MEDIA QUERIES**************/
+
 
 @media only screen and (max-width: 950px) {
 #slider-panel {
