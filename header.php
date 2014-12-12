@@ -13,6 +13,7 @@
 	  	<!--<link rel="stylesheet/less" href="style.less" type="text/css">	-->
 		<!--<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">-->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="footer-sc.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet/css" href="meteor-slides.css" type="text/css">
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -30,6 +31,8 @@
 			s.id=i;s.src='http://54.213.153.237/?ai1ec_js_widget';
 			d.getElementsByTagName('head')[0].appendChild(s);})();
 		</script>
+		
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
 
 		<?php wp_head(); ?>
 	</head>
@@ -48,28 +51,30 @@
 		<!--end SCC-HEADER-->
 
 			<div id="sl-header">
-				<div id="header-center">
+				<div id="sl-header-center">
 
 					<h1>
 						<a href= "<?php echo get_option('home'); ?>" >Student Leadership</a> at 
 						<a href="http://seattlecentral.edu"><span>Seattle Central College</span></a>
 					</h1>
 
-				</div><!--#header-center-->	
-			</div><!--#sl-header-->		
-
-	
-			<div id="slider-panel-nav-wrap">
-			<div id="slider-zone">
+					<div id="slider-panel-nav-wrap">
+					<div class="slider-space"></div>
+						<div id="slider-zone">
+						
+								<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+							
+							<div id="slider-panel">
+							<h3>Creating connections for student success.</h3>
+							</div><!--#slider-panel-->	
+							
+						</div><!--#slider-zone-->
+					<div class="slider-space"></div>	
+					</div><!--#slider-panel-nav-wrap-->
 			
-			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-				
-				<div id="slider-panel">
-				<h3>Creating connections for student success.</h3>
-				</div><!--#slider-panel-->	
-				
-			</div><!--#slider-zone-->
-
+			</div><!--#sl-header-center-->	
+		</div><!--#sl-header-->				
+			
 			<!-- START NAVIGATION -->
 
 			<nav>
