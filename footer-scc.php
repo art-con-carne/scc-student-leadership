@@ -62,7 +62,7 @@
 	
 	<div class="row">
 		<div class="columns top-padding">
-			<img class="footer-logo"src="images/seattle-central-college-stack.png" alt="Seattle Central College" >
+			<img class="footer-logo"src="<?php bloginfo('template_directory');?>/images/seattle-central-college-stack.png" alt="Seattle Central College" >
 		</div>
 	</div>
 
