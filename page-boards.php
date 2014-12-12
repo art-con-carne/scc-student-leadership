@@ -1,10 +1,16 @@
 <?php get_header(); ?>
 
-<!-- START SIDEBAR -->
-<?php get_sidebar( 'primary' ); ?>
-<!-- END SIDEBAR -->
+<div id="center">
+	
+<!--breadcumbs here-->
+<?php the_breadcrumb(); ?>
+	<div id="main">
 
-<!-- START CONTENT -->
+		<!-- START SIDEBAR -->
+		<?php get_sidebar( 'primary' ); ?>
+		<!-- END SIDEBAR -->
+
+		<!-- START CONTENT -->
 <div id="main">
     <div id="content">
         <?php global $post; ?>
@@ -39,5 +45,8 @@
 <!-- START SIDEBAR -->
 <?php get_sidebar( 'secondary' ); ?>
 <!-- END SIDEBAR -->
+	</div><!--#main-->
+	
+</div><!--#center-->
 
 <?php get_footer(); ?>

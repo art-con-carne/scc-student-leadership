@@ -107,7 +107,9 @@ h3 {
   font-weight: 600;
   font-size: 1.4em;
   font-style: italic;
-  line-height: 1.2em;
+  line-height: .6em;
+  margin-top: 1.4em;
+  margin-bottom: .1em;
 }
 h4 {
   font: 'Open Sans', sans-serif;
@@ -120,9 +122,17 @@ h4 {
 h5 {
   font: 'Open Sans', sans-serif;
   color: #000000;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.2em;
-  font-style: normal;
+  font-style: italic;
+  line-height: .1em;
+}
+h6 {
+  font: 'Open Sans', sans-serif;
+  color: #444;
+  font-weight: 400;
+  font-size: .8em;
+  font-style: italic;
   line-height: 1.0em;
 }
 header {
@@ -254,21 +264,6 @@ nav #nav-main a:focus,
   width: 80%;
   margin: auto;
 }
-#breadcrumbs {
-  float: left;
-  list-style: none;
-  margin: 10px 0;
-  overflow: hidden;
-}
-#breadcrumbs li {
-  float: left;
-  margin-right: 15px;
-}
-#breadcrumbs .separator {
-  font-weight: 700;
-  font-size: 20px;
-  color: #999;
-}
 #main {
   width: 100%;
 }
@@ -333,7 +328,7 @@ nav #nav-main a:focus,
 }
 .button-box {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 #asc-contact {
   margin: auto;
